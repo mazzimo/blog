@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8" />
+        <title>Mazzimo. @ViewBag.Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+	    <link href='http://fonts.googleapis.com/css?family=Dosis:600' rel='stylesheet' type='text/css'>
+	    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        
+	    <!-- Latest compiled and minified CSS -->
+	    <link rel="stylesheet" href="~/Content/external/bootstrap.min.css">
+        @Styles.Render("~/Content/css")		
+	
+	</head>
+	
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+			  <div class="col-lg-3 col-md-4 col-sm-4 singlecol">
+				<div class="profile">
+					<h1 class="text-center" >MASSIMO FRANCIOSA</h1>
+					<img src="~/Images/cvimage_400x400.png" class="img-circle center-block myimage shadow" /> 
+					
+					<div class="row">
+						<div class="col-xs-6">
+							<div class="optpane shadow" style="width:85px;">
+								<a href="/cv/en"><img class="img-circle shadow" style="height:20px;width:20px;" src="~/Images/icon-lang-eng.png" /></a>
+								<a href="/cv/it"><img class="img-circle shadow" style="height:20px;width:20px;" src="~/Images/icon-lang-ita.png" /></a>
+							</div>
+						</div>
+						<div class="col-xs-6">
+							<div class="optpane shadow socicon" style="width:130px;font-size:large">
+								<a target="_blank" href="https://twitter.com/mazzimo_f">a</a>
+								<a target="_blank" href="http://uk.linkedin.com/in/massimofranciosa/en">j</a>
+								<a target="_blank" href="mailto:maxfranciosa@hotmail.it">@@</a>
+							</div>
+						</div>
+					</div>
+					<div class="intro">
+						@ViewBag.Intro
+					</div>
+				</div>
+			  </div>
+			  
+              <div>
+                  @RenderBody()
+              </div>
+
+			</div>
+		</div>
+		
+        @RenderSection("Scripts", false);
+    
+	</body>
+</html>

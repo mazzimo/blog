@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Chutzpah</id>
+    <version>4.1.0</version>
+    <title>Chutzpah - A JavaScript Test Runner</title>
+    <authors>Matthew Manela</authors>
+    <owners>Matthew Manela</owners>
+    <licenseUrl>https://github.com/mmanela/chutzpah/blob/master/License.txt</licenseUrl>
+    <projectUrl>https://github.com/mmanela/chutzpah</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/mmanela/chutzpah/master/doc/images/chetTimes.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Chutzpah is an open source JavaScript test runner which helps you integrate JavaScript unit testing into your website. It enables you to run JavaScript unit tests from the command line and from inside of Visual Studio. It also supports running in the TeamCity continuous integration server.</description>
+    <summary>Chutzpah is an open source JavaScript test runner which enables you to run JavaScript unit tests from the command line and from inside of Visual Studio.</summary>
+    <releaseNotes>* Integrated debugging in Visual Studio
+* Support for Skipped tests
+* Customize code coverage output location
+* Added NUnitXml result transformer</releaseNotes>
+    <language>en-US</language>
+    <tags>testing javascript tdd qunit jasmine mocha coffeescript typescript</tags>
+  </metadata>
+</package>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>CommonMark.NET</id>
+    <version>0.9.1</version>
+    <title>CommonMark.NET</title>
+    <authors>Knagis</authors>
+    <owners>Knagis</owners>
+    <licenseUrl>https://raw.githubusercontent.com/Knagis/CommonMark.NET/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/Knagis/CommonMark.NET/</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/dcurtis/markdown-mark/master/png/32x20.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>.NET library for converting Markdown documents to HTML according to the CommonMark specification. Optimized for maximum performance and targets every .NET version since 2.0, including PCL, Mono and .NET Core.</description>
+    <summary>Fastest .NET library for converting Markdown documents to HTML.</summary>
+    <releaseNotes>Updated to specification 0.20. Additional bugfixes.</releaseNotes>
+    <copyright>Copyright © Kārlis Gaņģis 2014-2015</copyright>
+    <tags>CommonMark Markdown</tags>
+  </metadata>
+</package>

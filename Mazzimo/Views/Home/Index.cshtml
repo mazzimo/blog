@@ -1,0 +1,31 @@
+﻿@using Mazzimo.Models
+@model Post
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "";
+    ViewBag.Intro = ""; 
+}
+            <div class="col-lg-6 col-md-8 col-sm-8 singlecol">
+                  <article>
+                  <h1>@Model.Title</h1>
+                  <div>
+                      @Html.Raw(CommonMark.CommonMarkConverter.Convert(Model.Content).Replace("href=","target='_blank' href="))
+                  </div>
+                  </article>
+                  @if(Model.NextPosts != null && Model.NextPosts.Count > 0)
+                  {
+                  <div>
+                    <h1>Other Posts</h1>
+                      @foreach (Post nextPost in Model.NextPosts)
+                      { 
+                        <div>
+                           <a href="/@nextPost.Code">
+                               <h2>
+                                   @nextPost.Title
+                               </h2>
+                            </a>
+                        </div>                    
+                      }
+                  </div>
+                  }
+              </div>

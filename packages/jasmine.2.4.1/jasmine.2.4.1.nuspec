@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>jasmine</id>
+    <version>2.4.1</version>
+    <title>Jasmine Behavior-Driven JavaScript</title>
+    <authors>Jasmine development team</authors>
+    <owners>Jasmine development team</owners>
+    <projectUrl>https://github.com/jasmine/jasmine/tree/v2.4.1</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Jasmine is a Behavior Driven Development testing framework for JavaScript. It does not rely on browsers, DOM, or any JavaScript framework. Thus it's suited for websites, Node.js projects, or anywhere that JavaScript can run</description>
+    <summary>DOM-less simple JavaScript testing framework</summary>
+    <language>en-US</language>
+    <tags>jasmine javascript testing framework behavior driven</tags>
+  </metadata>
+</package>

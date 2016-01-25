@@ -1,0 +1,6 @@
+Mazzimo/bin/*
+Mazzimo.Tests/bin/*
+Mazzimo/obj/*
+Mazzimo.Tests/obj/*
+Mazzimo/Properties/PublishProfiles/*
+.vs/*

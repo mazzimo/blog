@@ -1,0 +1,573 @@
+﻿{
+	Intro : 'Sono un programmatore versatile con grande passione per la tecnologia, grandi abilita\' di problem-solving e un ottima attitudine ad imparare in fretta. Una persona a cui piace programmare anche nel tempo libero e che prova soddisfazione ad utilizzare le piu\' moderne tecnologie. Esperienza lavorativa in team Agile (Scrum).',
+	WorkingExperienceDesc : 'Esperienza Lavorativa',
+	EducationDesc : 'Educazione',
+	SkillsDesc : 'Skills',
+	SideProjectsDesc : 'Progetti Personali',
+	WorkingExperience: [
+		{
+			CompanyName : 'Reading Room',
+			CompanyLogo : '../Images/Companies/rroom.png',
+			CompanyWebsite : 'http://www.readingroom.com/',
+			RoleName : 'Web Developer/Software Engineer',
+			DateStart : "2014-09-01T00:00:00.000Z",
+			DateEnd : null,
+			Description : 'Reading Room e\' una web agency con uffici in Gran Bretagna, Singapore, Australia, Tailandia e Hong Kong. Il mio ruolo principale consiste nel seguire lo sviluppo dei progetti .Net (principalmente utilizzando Sitecore e Umbraco) dall\'analisi alla messa in produzione.',
+			Skills : [
+				{ 
+					Id:'csharp',
+					Desc : 'c#'
+				},
+				{ 
+					Id:'javascript',
+					Desc : 'JavaScript'
+				},
+				{ 
+					Id:'css',
+					Desc : 'CSS'
+				},
+				{ 
+					Id:'dotnet',
+					Desc : '.Net'
+				},
+				{ 
+					Id:'sitecore',
+					Desc : 'Sitecore'
+				},
+				{ 
+					Id:'umbraco',
+					Desc : 'Umbraco'
+				},
+				{ 
+					Id:'aspnetmvc',
+					Desc : 'ASP.NET MVC'
+				},
+				{ 
+					Id:'aspnetwebforms',
+					Desc : 'ASP.NET WebForms'
+				},
+				{ 
+					Id:'sqlserver',
+					Desc : 'SQL Server'
+				},
+				{ 
+					Id:'git',
+					Desc : 'Git'
+				},
+				{ 
+					Id:'ci',
+					Desc : 'Continuos Integration'
+				},
+				{ 
+					Id:'jenkins',
+					Desc : 'Jenkins'
+				},
+				{ 
+					Id:'svn',
+					Desc : 'SVN'
+				}
+			]
+
+		},
+		{
+			CompanyName : 'Sporting Index',
+			CompanyLogo : '../Images/Companies/spindex.png',
+			CompanyWebsite : 'http://www.sportingindex.com/',
+			RoleName : 'Integration Software Engineer',
+			DateStart : "2013-06-01T00:00:00.000Z",
+			DateEnd : "2014-07-01T00:00:00.000Z",
+			Description : 'Sporting Index e\' un\'azienda leader nel settore dello spread betting. Ho fatto parte del team di integrazione, responsabile dello sviluppo delle API e nell integrare la piattaforma proprietaria con i sistemi informativi dei clienti.',
+			Skills : [
+				{ 
+					Id:'csharp',
+					Desc : 'c#'
+				},
+				{ 
+					Id:'dotnet',
+					Desc : '.Net'
+				},
+				{ 
+					Id:'mongodb',
+					Desc : 'Mongo DB'
+				},
+				{ 
+					Id:'rest',
+					Desc : 'REST'
+				},
+				{ 
+					Id:'hateos',
+					Desc : 'HATEOS'
+				},
+				{ 
+					Id:'tdd',
+					Desc : 'TDD'
+				},
+				{ 
+					Id:'unittesting',
+					Desc : 'Unit Testing'
+				},
+				{ 
+					Id:'rabbitmq',
+					Desc : 'RabbitMQ'
+				},
+				{ 
+					Id:'git',
+					Desc : 'Git'
+				},
+				{ 
+					Id:'ci',
+					Desc : 'Continuos Integration'
+				},
+				{ 
+					Id:'ioc',
+					Desc : 'IoC'
+				}
+			]
+		},
+		{
+			CompanyName : 'Prama',
+			CompanyLogo : '../Images/Companies/prama.png',
+			CompanyWebsite : 'http://www.prama.co.uk/',
+			RoleName : 'Software Engineer',
+			DateStart : "2012-08-01T00:00:00.000Z",
+			DateEnd : "2013-05-01T00:00:00.000Z",
+			Description : 'Prama e\' un brand che include i siti www.asiand8.com, www.chillitickets.com e i magazine AsianWoman e AsianBride. Come parte del reparto IT mi sono preso cura della manutenzione e dell\'ampliamento dei siti pre esistenti e nello sviluppo di nuovi progetti (esempio www.asianbride.me).',
+			Skills : [
+				{ 
+					Id:'csharp',
+					Desc : 'c#'
+				},
+				{ 
+					Id:'vbnet',
+					Desc : 'VB.NET'
+				},
+				{ 
+					Id:'dotnet',
+					Desc : '.Net'
+				},
+				{ 
+					Id:'aspnetwebforms',
+					Desc : 'ASP.NET WebForms'
+				},
+				{ 
+					Id:'aspnetmvc',
+					Desc : 'ASP.NET MVC'
+				},
+				{ 
+					Id:'javascript',
+					Desc : 'JavaScript'
+				},
+				{ 
+					Id:'jquery',
+					Desc : 'jQuery'
+				},
+				{ 
+					Id:'css',
+					Desc : 'CSS'
+				},
+				{ 
+					Id:'bootstrap',
+					Desc : 'Bootstrap'
+				},
+				{ 
+					Id:'rest',
+					Desc : 'REST'
+				},
+				{ 
+					Id:'unittesting',
+					Desc : 'Unit Testing'
+				},
+				{ 
+					Id:'sqlserver',
+					Desc : 'SQLServer'
+				},
+				{ 
+					Id:'svn',
+					Desc : 'SVN'
+				},
+				{ 
+					Id:'ioc',
+					Desc : 'IoC'
+				}
+			]
+		},
+		{
+			CompanyName : 'WeBuild',
+			CompanyLogo : '../Images/Companies/webuild.jpg',
+			CompanyWebsite : 'http://www.webuild.co.uk/',
+			RoleName : 'Web Developer/Software Engineer',
+			DateStart : "2011-06-01T00:00:00.000Z",
+			DateEnd : "2012-08-01T00:00:00.000Z",
+			Description : 'WeBuild e\' una piccola web agency con base in covent garden. sviluppo di applicazioni web di varia natura, tra sistemi di gestione di palestre a sistemi automatici di newsletter, passando per siti tematici per ragazzi.',
+			Skills : [
+				{ 
+					Id:'csharp',
+					Desc : 'c#'
+				},
+				{ 
+					Id:'vbnet',
+					Desc : 'VB.NET'
+				},
+				{ 
+					Id:'dotnet',
+					Desc : '.Net'
+				},
+				{ 
+					Id:'aspnetwebforms',
+					Desc : 'ASP.NET WebForms'
+				},
+				{ 
+					Id:'javascript',
+					Desc : 'JavaScript'
+				},
+				{ 
+					Id:'jquery',
+					Desc : 'jQuery'
+				},
+				{ 
+					Id:'css',
+					Desc : 'CSS'
+				},
+				{ 
+					Id:'rest',
+					Desc : 'REST'
+				},
+				{ 
+					Id:'sqlserver',
+					Desc : 'SQLServer'
+				},
+				{ 
+					Id:'svn',
+					Desc : 'SVN'
+				}
+			]
+		},
+		{
+			CompanyName : 'Optima Italia',
+			CompanyLogo : '../Images/Companies/optima.png',
+			CompanyWebsite : 'http://www.optimaitalia.com/',
+			RoleName : '.NET/ SQL Server software developer',
+			DateStart : "2008-10-01T00:00:00.000Z",
+			DateEnd : "2011-05-01T00:00:00.000Z",
+			Description : 'Optima Italia e\' una multiutility. Il mio ruolo e\' ampliare e manutenere i sistemi di billing e di provisioning (attivazione linee telefoniche) aziendali.',
+			Skills : [
+				{ 
+					Id:'csharp',
+					Desc : 'c#'
+				},
+				{ 
+					Id:'vbnet',
+					Desc : 'VB.NET'
+				},
+				{ 
+					Id:'dotnet',
+					Desc : '.Net'
+				},
+				{ 
+					Id:'sqlserver',
+					Desc : 'SQLServer'
+				},
+				{ 
+					Id:'aspnetwebforms',
+					Desc : 'ASP.NET WebForms'
+				},
+				{ 
+					Id:'winforms',
+					Desc : 'Windows Forms'
+				},
+				{ 
+					Id:'svn',
+					Desc : 'SVN'
+				},
+				{ 
+					Id:'soap',
+					Desc : 'SOAP'
+				}
+			]
+		}
+	],
+	SideProjects : [
+		{
+			Name : 'In Giro Con Fluppa',
+			Logo : '../Images/Companies/fluppa.jpg',
+			PeriodDescription : 'From 2015',
+			Website : 'http://www.ingiroconfluppa.com',
+			ProjectType : 'Website',
+			Description : 'Travel Blog creato per la mia ragazza. CMS completamente scritto da zero usando MongoDB, Bootstrap, AngularJS e ASP.NET MVC e hostato su Azure',
+			Skills : [
+				{ 
+					Id:'csharp',
+					Desc : 'c#'
+				},
+				{ 
+					Id:'dotnet',
+					Desc : '.Net'
+				},
+				{ 
+					Id:'mongodb',
+					Desc : 'Mongo DB'
+				},
+				{ 
+					Id:'aspnetmvc',
+					Desc : 'ASP.NET MVC'
+				},
+				{ 
+					Id:'angularjs',
+					Desc : 'Angular JS'
+				},
+				{ 
+					Id:'bootstrap',
+					Desc : 'Bootstrap'
+				},
+				{ 
+					Id:'jquery',
+					Desc : 'jQuery'
+				},
+				{ 
+					Id:'css',
+					Desc : 'CSS'
+				},
+				{ 
+					Id:'azure',
+					Desc : 'Azure'
+				}
+			]
+		},
+		{
+			Name : 'RandomiceMe',
+			Logo : '../Images/Companies/Randomice.png',
+			PeriodDescription : 'From 2014',
+			Website : 'http://randomice.azurewebsites.net/',
+			ProjectType : 'Website',
+			Description : 'RandomiceMe e\' un sito che permette a utenti registrati di creare divertenti generatori automatici e di diffonderli tramite i social network.',
+			Skills : [
+				{ 
+					Id:'csharp',
+					Desc : 'c#'
+				},
+				{ 
+					Id:'dotnet',
+					Desc : '.Net'
+				},
+				{ 
+					Id:'mongodb',
+					Desc : 'Mongo DB'
+				},
+				{ 
+					Id:'aspnetmvc',
+					Desc : 'ASP.NET MVC'
+				},
+				{ 
+					Id:'bootstrap',
+					Desc : 'Bootstrap'
+				},
+				{ 
+					Id:'jquery',
+					Desc : 'jQuery'
+				},
+				{ 
+					Id:'css',
+					Desc : 'CSS'
+				},
+				{ 
+					Id:'azure',
+					Desc : 'Azure'
+				}
+			]
+		},
+		{
+			Name : 'Fanpage Reader',
+			Logo : '../Images/Companies/fpreader.png',
+			PeriodDescription : 'From 2013',
+			Website : 'http://www.windowsphone.com/it-it/store/app/fanpage-reader/5ad6cc04-cb90-4468-88ed-a5e954cd3df0',
+			ProjectType : 'Windows Phone App',
+			Description : 'app non ufficiale di www.fanpage.it. Include supporto ai live tile, ai tiles secondari, condivisione sui social network e riproduzione video.',
+			Skills : [
+				{ 
+					Id:'csharp',
+					Desc : 'c#'
+				},
+				{ 
+					Id:'dotnet',
+					Desc : '.Net'
+				},
+				{ 
+					Id:'windowsphone',
+					Desc : 'Windows Phone Development'
+				},
+				{ 
+					Id:'xaml',
+					Desc : 'XAML'
+				}
+			]
+		}
+	],
+	Education : [
+		{
+			Name : 'Univ. di Napoli "Federico II"',
+			Logo : '../Images/Companies/Logo_unina.gif',
+			Website : 'http://informatica.dieti.unina.it/',
+			FromYear : 2005,
+			ToYear : 2011,
+			Degree : 'Laurea Triennale in Scienze Informatiche',
+			Description : ''
+		}
+	],
+	Skills : [
+				{ 
+					Id:'oop',
+					Desc : 'Object Oriented Programming',
+					Percentage : 95
+				},
+				{ 
+					Id:'designpatterns',
+					Desc : 'Design Patterns',
+					Percentage : 90
+				},
+				{ 
+					Id:'csharp',
+					Desc : 'c#',
+					Percentage : 95
+				},
+				{ 
+					Id:'javascript',
+					Desc : 'JavaScript',
+					Percentage : 75
+				},
+				{ 
+					Id:'jquery',
+					Desc : 'jQuery',
+					Percentage : 75
+				},
+				{ 
+					Id:'css',
+					Desc : 'CSS',
+					Percentage : 75
+				},
+				{ 
+					Id:'bootstrap',
+					Desc : 'Bootstrap',
+					Percentage : 75
+				},
+				{ 
+					Id:'dotnet',
+					Desc : '.Net',
+					Percentage : 95
+				},
+				{ 
+					Id:'sitecore',
+					Desc : 'Sitecore',
+					Percentage : 55
+				},
+				{ 
+					Id:'umbraco',
+					Desc : 'Umbraco',
+					Percentage : 55
+				},
+				{ 
+					Id:'aspnetmvc',
+					Desc : 'ASP.NET MVC',
+					Percentage : 85
+				},
+				{ 
+					Id:'aspnetwebforms',
+					Desc : 'ASP.NET WebForms',
+					Percentage : 85
+				},
+				{ 
+					Id:'sqlserver',
+					Desc : 'SQL Server',
+					Percentage : 90
+				},
+				{ 
+					Id:'git',
+					Desc : 'Git',
+					Percentage : 70
+				},
+				{ 
+					Id:'ci',
+					Desc : 'Continuos Integration',
+					Percentage : 70
+				},
+				{ 
+					Id:'jenkins',
+					Desc : 'Jenkins',
+					Percentage : 60
+				},
+				{ 
+					Id:'svn',
+					Desc : 'SVN',
+					Percentage : 80
+				},
+				{ 
+					Id:'mongodb',
+					Desc : 'Mongo DB',
+					Percentage : 70
+				},
+				{ 
+					Id:'rest',
+					Desc : 'REST',
+					Percentage : 85
+				},
+				{ 
+					Id:'hateos',
+					Desc : 'HATEOS',
+					Percentage : 60
+				},
+				{ 
+					Id:'tdd',
+					Desc : 'TDD',
+					Percentage : 65
+				},
+				{ 
+					Id:'unittesting',
+					Desc : 'Unit Testing',
+					Percentage : 80
+				},
+				{ 
+					Id:'rabbitmq',
+					Desc : 'RabbitMQ',
+					Percentage : 55
+				},
+				{ 
+					Id:'ioc',
+					Desc : 'IoC',
+					Percentage : 85
+				},
+				{ 
+					Id:'vbnet',
+					Desc : 'VB.NET',
+					Percentage : 95
+				},
+				{ 
+					Id:'winforms',
+					Desc : 'Windows Forms',
+					Percentage : 90
+				},
+				{ 
+					Id:'angularjs',
+					Desc : 'Angular JS',
+					Percentage : 60
+				},
+				{ 
+					Id:'azure',
+					Desc : 'Azure',
+					Percentage : 60
+				},
+				{ 
+					Id:'windowsphone',
+					Desc : 'Windows Phone Development',
+					Percentage : 60
+				},
+				{ 
+					Id:'xaml',
+					Desc : 'XAML',
+					Percentage : 60
+				},
+				{ 
+					Id:'soap',
+					Desc : 'SOAP',
+					Percentage : 85
+				}
+	]
+}

@@ -1,0 +1,99 @@
+﻿@using Mazzimo.Models
+@model Cv
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "";
+    ViewBag.Intro = Model.Intro; 
+}
+
+@section Scripts {
+    <script src="~/Scripts/Angular/angular.min.js"></script>
+    <script src="~/Scripts/Angular/angular-animate.min.js"></script>
+    @Scripts.Render("~/bundles/AngularApp")
+    <script>
+        var langid = '@ViewBag.Id';
+        var AngularApp = angular.module('AngularApp', ['ngAnimate' ]);
+        AngularApp.value('langid', langid);
+        AngularApp.controller('CvController', CvController);
+        AngularApp.factory('GetCVFactory', GetCVFactory);
+    </script>
+}
+    <div ng-app="AngularApp" ng-controller="CvController as ctrl" >
+        
+			  <div class="col-lg-6 col-md-8 col-sm-8 singlecol">
+				<h1>@Model.WorkingExperienceDesc</h1>
+
+                <div ng-if="ctrl.hasFilter()">
+                    Selected:
+                    <div class="skill-exp shadow" ng-repeat="selSkill in ctrl.filter"><a href ng-click="ctrl.removeFilter(selSkill)">{{selSkill.Desc}}</a></div>
+                </div>
+
+                <div class="wkexp"  ng-repeat="singleWx in ctrl.cv.WorkingExperience | filter:ctrl.isWorkingExperienceInFilter">
+					<a target="_blank" ng-href="{{singleWx.CompanyWebsite}}">
+						<img ng-src="{{singleWx.CompanyLogo}}" class="img-circle shadow" /> 	
+					</a>
+					<div class="period shadow" ng-show="singleWx.DateEnd">{{singleWx.DateStart  | date:'MMM yyyy'}} - {{singleWx.DateEnd  | date:'MMM yyyy'}}</div>
+                    <div class="period shadow" ng-hide="singleWx.DateEnd">From {{singleWx.DateStart  | date:'MMM yyyy'}}</div>
+					<h3 class="compname"><a target="_blank" ng-href="{{singleWx.CompanyWebsite}}">{{singleWx.CompanyName}}</a></h3>
+					<div class="wkexp-inner shadow">
+						<h4>{{singleWx.RoleName}}</h4>
+						<p>{{singleWx.Description}}</p>
+						<div class="list-skill">
+							<strong>Skills:</strong> 
+							<div class="skill-exp shadow" ng-repeat="singleWxSkill in singleWx.Skills"><a href ng-click="ctrl.addFilter(singleWxSkill)">{{singleWxSkill.Desc}}</a></div>
+						</div>
+					</div>		
+				</div>						
+				
+				<h1>@Model.EducationDesc</h1>
+				
+				<div class="wkexp" ng-repeat="singleEd in ctrl.cv.Education">
+					<a ng-href="{{singleEd.Website}}">
+						<img ng-attr-src="{{singleEd.Logo}}" class="img-circle shadow" /> 	
+					</a>	
+					<div class="period shadow">{{singleEd.FromYear}} - {{singleEd.ToYear}}</div>
+					<h3 class="compname"><a target="_blank" ng-href="{{singleEd.Website}}">{{singleEd.Name}}</a></h3>		
+					<div class="wkexp-inner shadow">
+						<h4>{{singleEd.Degree}}</h4>
+						<p>{{singleEd.Description}}</p>
+					</div>	
+				</div>
+			
+
+				<h1>@Model.SideProjectsDesc</h1>
+				
+                <div class="wkexp" ng-repeat="singleSideProj in ctrl.cv.SideProjects | filter:ctrl.isPersonalProjectInFilter">
+					<a ng-href="{{singleSideProj.Website}}">
+						<img ng-attr-src="{{singleSideProj.Logo}}" class="img-circle shadow" /> 	
+					</a>	
+                    <div class="period shadow">{{singleSideProj.PeriodDescription}}</div>
+					<h3 class="compname"><a target="_blank" ng-href="{{singleSideProj.Website}}">{{singleSideProj.Name}}</a></h3>		
+					<div class="wkexp-inner shadow">
+                        <h4>{{singleSideProj.ProjectType}}</h4>
+						<p>{{singleSideProj.Description}}</p>
+                        <div class="list-skill">
+							<strong>Skills:</strong> 
+							<div class="skill-exp shadow" ng-repeat="singleSpSkill in singleSideProj.Skills"><a href ng-click="ctrl.addFilter(singleSpSkill)">{{singleSpSkill.Desc}}</a></div>
+						</div>
+					</div>	
+				</div>
+				
+					
+			  </div>
+
+			
+			  <div class="col-lg-3 col-md-12 singlecol" style="z-index:-1000">
+				<h1>@Model.SkillsDesc</h1>
+				<div class="row">
+				    
+                    <div class="singleskill col-lg-12 col-md-6 col-sm-6 col-xs-12" ng-repeat="singleSk in ctrl.cv.Skills| filter:ctrl.isSkillInFilter">
+						<h3 ng-attr-id="{{singleSk.Id}}">{{singleSk.Desc}}</h3>
+						<div ng-attr-id="{{singleSk.Id + '_bar'}}" class="skillbar shadow" >   
+							<div class="skillbar-fill shadow" ng-attr-style="{{'width:' + singleSk.Percentage + '%'}}">
+                            </div>
+						</div>
+					</div>	
+				</div>
+			  </div>
+
+        </div>

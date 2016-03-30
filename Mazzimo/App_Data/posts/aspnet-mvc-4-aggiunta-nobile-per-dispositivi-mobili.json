@@ -2,11 +2,7 @@
 	Code : "aspnet-mvc-4-aggiunta-nobile-per-dispositivi-mobili",
 	Content : "Ho da poco scoperto una feature molto interessante di ASP.NET MVC 4 che aiutera' tantissimo chi e' intento a sviluppare web application che si vedano in modo decente su dispositivi mobili e non.
 
-<div data-desc='primo sottobicchiere'>
-
 ![titolo](http://1.bp.blogspot.com/-6NfXQXQ0umk/UWkjIhxmKII/AAAAAAAAAJQ/ibGHZw3tJJ0/s1600/meme.jpg \"title\")
-
-</div>
 
 Lo scopo e' fornire diverse versioni della stessa View, creandone una aggiuntiva che sara' adattata per smartphone e tablet. e' possibile addirittura fare in modo di fornire un ulteriore view per un particolare User-Agent.
 

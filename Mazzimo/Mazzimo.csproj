@@ -188,6 +188,7 @@
     <Content Include="Global.asax" />
     <Content Include="Images\Companies\fluppa.jpg" />
     <Content Include="Images\Companies\fpreader.png" />
+    <Content Include="Images\Companies\logofb.png" />
     <Content Include="Images\Companies\Logo_unina.gif" />
     <Content Include="Images\Companies\optima.png" />
     <Content Include="Images\Companies\prama.png" />

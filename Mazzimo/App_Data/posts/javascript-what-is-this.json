@@ -71,7 +71,7 @@ Yep. You can literally do that, by executing the function *call* from any functi
 
 *Call* is a function that accepts as first parameter the value we want to assign to *this*, and then the rest of the parameters (in our example, none). We are actually telling the system to \"Execute the function *funcRef* from the instance *foo*\"
 ",
-	Title : "Things learned in Javascript part 1 - What is \"this\"?",
+	Title : "Journey of a c# developer into Javascript part 1 - What is \"this\"?",
 	ImageUrl : "/Images/cvimage_400x400.png",
 	Teaser : "One of the most difficult concept to grasp in javascript if you come from a stronged typed language background (like me) is the meaning of the \"this\" keyword.",
 	Tags : [ "Javascript","this" ],

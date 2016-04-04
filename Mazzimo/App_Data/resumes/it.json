@@ -289,7 +289,7 @@
 	SideProjects : [
 		{
 			Name : 'In Giro Con Fluppa',
-			Logo : '../Images/Companies/fluppa.jpg',
+			Logo : '../Images/Companies/logofb.png',
 			PeriodDescription : 'From 2015',
 			Website : 'http://www.ingiroconfluppa.com',
 			ProjectType : 'Website',
@@ -372,32 +372,6 @@
 				{ 
 					Id:'azure',
 					Desc : 'Azure'
-				}
-			]
-		},
-		{
-			Name : 'Fanpage Reader',
-			Logo : '../Images/Companies/fpreader.png',
-			PeriodDescription : 'From 2013',
-			Website : 'http://www.windowsphone.com/it-it/store/app/fanpage-reader/5ad6cc04-cb90-4468-88ed-a5e954cd3df0',
-			ProjectType : 'Windows Phone App',
-			Description : 'app non ufficiale di www.fanpage.it. Include supporto ai live tile, ai tiles secondari, condivisione sui social network e riproduzione video.',
-			Skills : [
-				{ 
-					Id:'csharp',
-					Desc : 'c#'
-				},
-				{ 
-					Id:'dotnet',
-					Desc : '.Net'
-				},
-				{ 
-					Id:'windowsphone',
-					Desc : 'Windows Phone Development'
-				},
-				{ 
-					Id:'xaml',
-					Desc : 'XAML'
 				}
 			]
 		}

@@ -224,3 +224,56 @@
           content: attr(data-desc);
             color:black;
         }
+
+    .move-animation.ng-move,
+    .move-animation.ng-enter,
+    .move-animation.ng-leave {
+        -webkit-transition:all linear 0.5s;
+        transition:all linear 0.5s;
+    }
+
+    .move-animation.ng-leave.ng-leave-active,
+    .move-animation.ng-move,
+    .move-animation.ng-enter {
+        opacity:0;
+        max-height:0;
+    }
+
+    .move-animation.ng-leave,
+    .move-animation.ng-move.ng-move-active,
+    .move-animation.ng-enter.ng-enter-active {
+        opacity:1;
+        max-height:100px;
+    }
+
+    /**
+     * Stagger Leave (hide) animation
+     */
+    .move-animation.ng-leave-stagger {
+        /* this will have a 100ms delay between each successive leave animation */
+        -webkit-transition-delay: 0.2s;
+        transition-delay: 0.2s;
+
+        /* in case the stagger doesn't work then these two values
+         must be set to 0 to avoid an accidental CSS inheritance */
+        -webkit-transition-duration: 0s;
+        transition-duration: 0s;
+    }
+
+    /**
+     * Stagger ENTER ANIMATION
+     */
+    .move-animation.ng-enter-stagger {
+        /* this will have a 100ms delay between each successive enter animation */
+        -webkit-transition-delay: 0.2s;
+        transition-delay: 0.2s;
+
+        /* in case the stagger doesn't work then these two values
+         must be set to 0 to avoid an accidental CSS inheritance */
+        -webkit-transition-duration: 0s;
+        transition-duration: 0s;
+    }
+
+    article img {
+        width:100%
+    }

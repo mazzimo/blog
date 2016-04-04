@@ -28,7 +28,7 @@
                     <div class="skill-exp shadow" ng-repeat="selSkill in ctrl.filter"><a href ng-click="ctrl.removeFilter(selSkill)">{{selSkill.Desc}}</a></div>
                 </div>
 
-                <div class="wkexp"  ng-repeat="singleWx in ctrl.cv.WorkingExperience | filter:ctrl.isWorkingExperienceInFilter">
+                <div class="wkexp move-animation" ng-repeat="singleWx in ctrl.cv.WorkingExperience | filter:ctrl.isWorkingExperienceInFilter">
 					<a target="_blank" ng-href="{{singleWx.CompanyWebsite}}">
 						<img ng-src="{{singleWx.CompanyLogo}}" class="img-circle shadow" /> 	
 					</a>
@@ -47,7 +47,7 @@
 				
 				<h1>@Model.EducationDesc</h1>
 				
-				<div class="wkexp" ng-repeat="singleEd in ctrl.cv.Education">
+				<div class="wkexp move-animation" ng-repeat="singleEd in ctrl.cv.Education">
 					<a ng-href="{{singleEd.Website}}">
 						<img ng-attr-src="{{singleEd.Logo}}" class="img-circle shadow" /> 	
 					</a>	
@@ -62,7 +62,7 @@
 
 				<h1>@Model.SideProjectsDesc</h1>
 				
-                <div class="wkexp" ng-repeat="singleSideProj in ctrl.cv.SideProjects | filter:ctrl.isPersonalProjectInFilter">
+                <div class="wkexp move-animation" ng-repeat="singleSideProj in ctrl.cv.SideProjects | filter:ctrl.isPersonalProjectInFilter">
 					<a ng-href="{{singleSideProj.Website}}">
 						<img ng-attr-src="{{singleSideProj.Logo}}" class="img-circle shadow" /> 	
 					</a>	

@@ -188,6 +188,7 @@
     <Content Include="Global.asax" />
     <Content Include="Images\Companies\fluppa.jpg" />
     <Content Include="Images\Companies\fpreader.png" />
+    <Content Include="Images\Companies\logofb.png" />
     <Content Include="Images\Companies\Logo_unina.gif" />
     <Content Include="Images\Companies\optima.png" />
     <Content Include="Images\Companies\prama.png" />
@@ -253,6 +254,8 @@
   <ItemGroup>
     <Content Include="App_Data\posts\vanity-url-su-aspnet-mvc.json" />
     <Content Include="App_Data\posts\aspnet-mvc-4-aggiunta-nobile-per-dispositivi-mobili.json" />
+    <Content Include="App_Data\posts\javascript-what-is-this.json" />
+    <Content Include="App_Data\posts\javascript-hoisting-and-undefined.json" />
     <None Include="Properties\PublishProfiles\mazzimo - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\mazzimo - Web Deploy.pubxml" />
     <Content Include="Views\Home\Post.cshtml" />

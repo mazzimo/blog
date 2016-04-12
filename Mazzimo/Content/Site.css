@@ -175,8 +175,12 @@
 			
 		}
 		
-		.singlecol h1 { font-family: 'Dosis', sans-serif; }
-		
+		.singlecol h1, .singlecol h2 { font-family: 'Dosis', sans-serif; }
+
+        a, a:focus, a:hover {
+            color:#561420;
+        }
+
 		.singleskill h3 
 		{
 			font-family: 'Dosis', sans-serif;

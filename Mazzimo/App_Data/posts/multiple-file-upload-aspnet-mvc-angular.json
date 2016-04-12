@@ -242,7 +242,6 @@ Don't forget eventually to inject the dependencies (in this case the directive *
 
 ",
     Title: "Multiple file upload with Asp.net MVC and AngularJS",
-    ImageUrl: "/Images/cvimage_400x400.png",
     Teaser: "A common problem in web applications nowadays is to create a way to upload multiple images at the same time.",
   Tags: [ "Javascript", "AngularJS", "Asp.Net MVC", "File Upload" ],
     NextPosts: [

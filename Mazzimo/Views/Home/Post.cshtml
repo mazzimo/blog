@@ -5,8 +5,40 @@
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.Title = Model.Title;
-    ViewBag.Intro = ""; 
+    ViewBag.Intro = "";
+    var totalUrl = String.Format("{0}{1}{2}{3}", Request.Url.Scheme, Uri.SchemeDelimiter, Request.Url.Authority, Request.Url.AbsolutePath);
+    string baseUrl = Request.Url.Scheme + "://" + Request.Url.Authority + Request.ApplicationPath.TrimEnd('/');
+    if (String.IsNullOrEmpty(Model.ImageUrl))
+    {
+        Model.ImageUrl = baseUrl + "/Images/cvimage_400x400.png";
+        Model.ImageHeight = 400;
+        Model.ImageWidth = 400;
+    }
 }
+
+@section metatags {
+    <link rel="image_src" type="image/jpeg" href="@Model.ImageUrl" />
+
+    <meta name="description" content="@Model.Teaser" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="@totalUrl" />
+    <meta property="og:title" content="@Model.Title" />
+    <meta property="og:description" content="@Model.Teaser" />
+    <meta property="og:image:width" content="@Model.ImageWidth" />
+    <meta property="og:image:height" content="@Model.ImageHeight" />
+    <meta property="og:image" content="@Model.ImageUrl" />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:site" content="@("@mazzimo_f")" />
+    <meta property="twitter:title" content="@Model.Title" />
+    <meta property="twitter:description" content="@Model.Teaser" />
+    <meta property="twitter:image" content="@Model.ImageUrl" />
+
+    <meta property="og:site_name" content="Mazzimo" />
+
+}
+
 
         <div class="col-lg-6 col-md-8 col-sm-8 singlecol">
             <article>

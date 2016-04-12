@@ -50,7 +50,6 @@ additionally, when in c# we declare a variable using the *var* keyword, the comp
 that's clearly because in c# there's no concept of *undefined value* .
 ",
 	Title : "Journey of a c# developer into Javascript part 2 - Variable hoisting & undefined value",
-	ImageUrl : "/Images/cvimage_400x400.png",
 	Teaser : "Another weird thing to getting used to in javascript if you come from a c# background is variable declaration.",
 	Tags : [ "Javascript","hoisting", "undefined" ],
   NextPosts: [

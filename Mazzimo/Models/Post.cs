@@ -14,6 +14,8 @@ namespace Mazzimo.Models
         public string Title { get; set; }
         public string Teaser { get; set; }
         public string ImageUrl { get; set; }
+        public int ImageHeight { get; set; }
+        public int ImageWidth { get; set; }
         public List<string> Tags { get; set; }
         public List<Post> NextPosts { get; set; }
     }

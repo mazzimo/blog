@@ -3,7 +3,7 @@
     Content: "Multiple file upload with Asp.net MVC and AngularJS
 
 A common problem in web applications nowadays is to create a way to upload multiple images at the same time, allowing the user to choose what to upload and check the progress at the same time.
-I have recently came across this problem developing my wife's travel blog [In Giro Con Fluppa](www.ingiroconfluppa.com/Home/Index/En) so I made some research.
+I have recently came across this problem developing my wife's travel blog [In Giro Con Fluppa](http://www.ingiroconfluppa.com/Home/Index/En) so I made some research.
 There are already some solutions available around in the form of directives, but none of them had exactly the kind of behaviour I expected.
 to make things clear, the behaviour should be something similar:
 

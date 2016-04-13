@@ -1,5 +1,6 @@
 ﻿{
     Code: "multiple-file-upload-aspnet-mvc-angular",
+    PostDate: "2016-04-12T00:00Z",
     Content: "Is very common nowadays to see web applications that give the user possibility to upload multiple images at the same time, and checking the progress.
 I have recently came across this problem developing my wife's travel blog [In Giro Con Fluppa](http://www.ingiroconfluppa.com/Home/Index/En) so I made some research.
 There are already some solutions available around (directives primarly), but none of them had exactly the kind of behaviour I expected.

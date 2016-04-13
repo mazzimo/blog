@@ -1,5 +1,6 @@
 ﻿{
-	Code : "javascript-hoisting-and-undefined",
+    Code: "javascript-hoisting-and-undefined",
+    PostDate: "2016-04-04T00:00Z",
 	Content : "Another weird thing to getting used to in javascript if you come from a c# background is **variable declaration**.
 
 the scope of a variable in javascript is in fact just related to the function where is declared and **NOT** to the block. this means that if you declare a variable inside a if block like this:

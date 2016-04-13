@@ -18,6 +18,7 @@ namespace Mazzimo.Models
         public int ImageWidth { get; set; }
         public List<string> Tags { get; set; }
         public List<Post> NextPosts { get; set; }
+        public DateTime PostDate { get; set; }
     }
 
 }

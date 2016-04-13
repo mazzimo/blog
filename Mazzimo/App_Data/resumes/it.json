@@ -293,7 +293,7 @@
 			PeriodDescription : 'From 2015',
 			Website : 'http://www.ingiroconfluppa.com',
 			ProjectType : 'Website',
-			Description : 'Travel Blog creato per la mia ragazza. CMS completamente scritto da zero usando MongoDB, Bootstrap, AngularJS e ASP.NET MVC e hostato su Azure',
+			Description : 'Travel Blog creato per mia moglie. CMS completamente scritto da zero usando MongoDB, Bootstrap, AngularJS e ASP.NET MVC e hostato su Azure',
 			Skills : [
 				{ 
 					Id:'csharp',

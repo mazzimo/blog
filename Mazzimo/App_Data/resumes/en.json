@@ -293,7 +293,7 @@
 			PeriodDescription : 'From 2015',
 			Website : 'http://www.ingiroconfluppa.com',
 			ProjectType : 'Website',
-			Description : 'My girlfriend\'s Travel Blog (in italian). Created from scratch using MongoDB, Bootstrap, AngularJS, ASP.NET MVC and hosted on Azure',
+			Description : 'My wife\'s Travel Blog (in italian). Created from scratch using MongoDB, Bootstrap, AngularJS, ASP.NET MVC and hosted on Azure',
 			Skills : [
 				{ 
 					Id:'csharp',

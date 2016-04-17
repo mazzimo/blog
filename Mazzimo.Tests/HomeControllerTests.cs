@@ -94,13 +94,13 @@ namespace Mazzimo.Tests
             var foundCv = new Cv();
             _cvRepo.Setup(r => r.GetResumeFromLanguageCode(It.IsAny<string>())).Returns(foundCv);
 
-            var result = _controller.CvPdf("test") as Rotativa.ViewAsPdf;
+            var result = _controller.CvPdf("test") as ViewResult;
 
             Assert.IsNotNull(result);
-            Assert.IsNotNull(result.Model);
-            Assert.IsInstanceOfType(result.Model, typeof(Cv));
+            Assert.IsNotNull(result.ViewData.Model);
+            Assert.IsInstanceOfType(result.ViewData.Model, typeof(Cv));
 
-            var cvResult = result.Model as Cv;
+            var cvResult = result.ViewData.Model as Cv;
 
             Assert.AreEqual(foundCv, cvResult);
         }

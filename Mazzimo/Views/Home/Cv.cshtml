@@ -6,7 +6,7 @@
     ViewBag.Intro = Model.Intro;
     var totalUrl = String.Format("{0}{1}{2}{3}", Request.Url.Scheme, Uri.SchemeDelimiter, Request.Url.Authority, Request.Url.AbsolutePath);
     string baseUrl = Request.Url.Scheme + "://" + Request.Url.Authority + Request.ApplicationPath.TrimEnd('/');
-    var pdfUrl = Url.Action("CvPdf", new { id = ViewBag.Id });
+    var printableUrl = Url.Action("CvPrint", new { id = ViewBag.Id });
 }
 
 @section metatags {
@@ -49,7 +49,8 @@
               
 
 			  <div class="col-lg-6 col-md-8 col-sm-8 singlecol">
-                <a href="@pdfUrl" class="shadow skill-exp pdfDownload" target="_blank" >Pdf Download</a>
+                <a href="@printableUrl" class="shadow skill-exp pdfDownload" target="_blank" >{{ctrl.cv.PrintableVersionDesc}}</a>
+                <a ng-href="{{ctrl.cv.PdfUrl}}" class="shadow skill-exp pdfDownload" target="_blank">Pdf Download</a>
     
                 <h1>@Model.WorkingExperienceDesc</h1>
 

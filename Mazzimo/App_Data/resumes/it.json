@@ -1,5 +1,7 @@
 ﻿{
-	Intro : 'Sono un programmatore versatile con grande passione per la tecnologia, grandi abilita\' di problem-solving e un ottima attitudine ad imparare in fretta. Una persona a cui piace programmare anche nel tempo libero e che prova soddisfazione ad utilizzare le piu\' moderne tecnologie. Esperienza lavorativa in team Agile (Scrum). Fortemente interessato nell ampliare la propria esperienza con Javascript',
+  PrintableVersionDesc: 'Versione stampabile',
+  PdfUrl : '/Content/PdfResumes/cv-it.pdf', 
+  Intro : 'Sono un programmatore versatile con grande passione per la tecnologia, grandi abilita\' di problem-solving e un ottima attitudine ad imparare in fretta. Una persona a cui piace programmare anche nel tempo libero e che prova soddisfazione ad utilizzare le piu\' moderne tecnologie. Esperienza lavorativa in team Agile (Scrum). Fortemente interessato nell ampliare la propria esperienza con Javascript',
 	WorkingExperienceDesc : 'Esperienza Lavorativa',
 	EducationDesc : 'Educazione',
 	SkillsDesc : 'Skills',

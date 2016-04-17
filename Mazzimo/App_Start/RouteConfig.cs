@@ -20,8 +20,8 @@ namespace Mazzimo
 
             routes.MapRoute(
                 name: "CvPdf",
-                url: "cv/{id}-pdf",
-                defaults: new { controller = "Home", action = "CvPdf" });
+                url: "cv/{id}-print",
+                defaults: new { controller = "Home", action = "CvPrint" });
 
             routes.MapRoute(
                 name: "Cv",

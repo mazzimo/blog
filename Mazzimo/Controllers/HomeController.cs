@@ -39,7 +39,7 @@ namespace Mazzimo.Controllers
             return View(cv);
         }
 
-        public ActionResult CvPdf(string id)
+        public ActionResult CvPrint(string id)
         {
             var cv = _cvRepo.GetResumeFromLanguageCode(id);
             if (cv == null)
@@ -47,7 +47,7 @@ namespace Mazzimo.Controllers
             Response.Cache.SetExpires(DateTime.Now.AddYears(1));
             Response.Cache.SetCacheability(HttpCacheability.Public);
 
-            return new Rotativa.ViewAsPdf(cv);
+            return View(cv);
         }
 
         public ActionResult Post(string id)

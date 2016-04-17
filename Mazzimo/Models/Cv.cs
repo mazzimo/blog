@@ -14,6 +14,8 @@ namespace Mazzimo.Models
 	    public string EducationDesc {get;set;}
 	    public string SkillsDesc {get;set;}
         public string SideProjectsDesc { get; set; }
+        public string PdfUrl { get; set; }
+        public string PrintableVersionDesc { get; set; }
 	    public List<WorkingExperience> WorkingExperience { get;set;}
         public List<Education> Education { get;set;}
         public List<Skill> Skills { get;set;}

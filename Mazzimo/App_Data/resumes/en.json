@@ -1,4 +1,6 @@
 ﻿{
+  PrintableVersionDesc: 'Printable version',
+  PdfUrl : '/Content/PdfResumes/cv-en.pdf',
 	Intro : 'A versatile software developer with great passion for technology, great ability to problem-solving and great attitude to learn quickly. I’m a passionate programmer that likes to put hands on code in my spare time; I like to work with cutting-edge technologies and methodologies. Experienced in working in Agile teams (Scrum). Currently strongly interested on expanding my experience on Javascript frameworks.',
 	WorkingExperienceDesc : 'Working Experience',
 	EducationDesc : 'Education',

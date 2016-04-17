@@ -59,6 +59,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Ninject.Web.WebApi.3.2.4.0\lib\net45-full\Ninject.Web.WebApi.dll</HintPath>
     </Reference>
+    <Reference Include="Rotativa, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rotativa.1.6.4\lib\net40\Rotativa.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
@@ -183,6 +187,7 @@
     <Content Include="Content\External\bootstrap.min.css" />
     <Content Include="Content\jasmine\jasmine.css" />
     <Content Include="Content\jasmine\jasmine_favicon.png" />
+    <Content Include="Content\Pdf.css" />
     <Content Include="favicon.ico" />
     <Content Include="Favicons\apple-touch-icon-114x114.png" />
     <Content Include="Favicons\apple-touch-icon-120x120.png" />
@@ -219,6 +224,7 @@
     <Content Include="Images\GreyGeometricPattern2.jpg" />
     <Content Include="Images\icon-lang-eng.png" />
     <Content Include="Images\icon-lang-ita.png" />
+    <Content Include="Rotativa\wkhtmltopdf.exe" />
     <Content Include="Scripts\Angular\angular-animate.min.js" />
     <Content Include="Scripts\Angular\angular-mocks.js" />
     <Content Include="Scripts\Angular\angular-route.min.js" />
@@ -276,11 +282,13 @@
     <Content Include="App_Data\posts\javascript-what-is-this.json" />
     <Content Include="App_Data\posts\javascript-hoisting-and-undefined.json" />
     <Content Include="App_Data\posts\multiple-file-upload-aspnet-mvc-angular.json" />
+    <Content Include="App_Browsers\qt.browser" />
     <None Include="Properties\PublishProfiles\mazzimo - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\mazzimo - Web Deploy.pubxml" />
     <Content Include="Views\Home\Post.cshtml" />
     <Content Include="Scripts\Angular\angular-sanitize.min.js.map" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\CvPdf.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Scripts\Services\" />

@@ -1,5 +1,5 @@
 ﻿{
-	Intro : 'Sono un programmatore versatile con grande passione per la tecnologia, grandi abilita\' di problem-solving e un ottima attitudine ad imparare in fretta. Una persona a cui piace programmare anche nel tempo libero e che prova soddisfazione ad utilizzare le piu\' moderne tecnologie. Esperienza lavorativa in team Agile (Scrum).',
+	Intro : 'Sono un programmatore versatile con grande passione per la tecnologia, grandi abilita\' di problem-solving e un ottima attitudine ad imparare in fretta. Una persona a cui piace programmare anche nel tempo libero e che prova soddisfazione ad utilizzare le piu\' moderne tecnologie. Esperienza lavorativa in team Agile (Scrum). Fortemente interessato nell ampliare la propria esperienza con Javascript',
 	WorkingExperienceDesc : 'Esperienza Lavorativa',
 	EducationDesc : 'Educazione',
 	SkillsDesc : 'Skills',
@@ -12,7 +12,7 @@
 			RoleName : 'Web Developer/Software Engineer',
 			DateStart : "2014-09-01T00:00:00.000Z",
 			DateEnd : null,
-			Description : 'Reading Room e\' una web agency con uffici in Gran Bretagna, Singapore, Australia, Tailandia e Hong Kong. Il mio ruolo principale consiste nel seguire lo sviluppo dei progetti .Net (principalmente utilizzando Sitecore e Umbraco) dall\'analisi alla messa in produzione.',
+			Description : 'Reading Room e\' una web agency con uffici in Gran Bretagna recentemente acquisita da Idox Group. Il mio ruolo principale consiste nel seguire lo sviluppo dei progetti .Net (principalmente utilizzando Sitecore e Umbraco) dall\'analisi alla messa in produzione.',
 			Skills : [
 				{ 
 					Id:'csharp',
@@ -334,6 +334,48 @@
 			]
 		},
 		{
+			Name : 'Mazzimo.fr',
+			Logo : '../Images/cvimage_400x400.png',
+			PeriodDescription : 'From 2015',
+			Website : 'https://github.com/mazzimo/blog',
+			ProjectType : 'Website',
+			Description : 'Il blog personale, hostato su azure e completamente open source.',
+			Skills : [
+				{ 
+					Id:'csharp',
+					Desc : 'c#'
+				},
+				{ 
+					Id:'dotnet',
+					Desc : '.Net'
+				},
+				{ 
+					Id:'aspnetmvc',
+					Desc : 'ASP.NET MVC'
+				},
+				{ 
+					Id:'bootstrap',
+					Desc : 'Bootstrap'
+				},
+				{ 
+					Id:'angularjs',
+					Desc : 'Angular JS'
+				},
+				{ 
+					Id:'jasmine',
+					Desc : 'Jasmine'
+				},				
+				{ 
+					Id:'css',
+					Desc : 'CSS'
+				},
+				{ 
+					Id:'azure',
+					Desc : 'Azure'
+				}
+			]
+		},		
+		{
 			Name : 'RandomiceMe',
 			Logo : '../Images/Companies/Randomice.png',
 			PeriodDescription : 'From 2014',
@@ -542,6 +584,11 @@
 					Id:'soap',
 					Desc : 'SOAP',
 					Percentage : 85
-				}
+				},
+        {
+          Id: 'jasmine',
+          Desc: 'Jasmine',
+          Percentage: 50
+        }
 	]
 }

@@ -19,6 +19,11 @@ namespace Mazzimo
                 defaults: new { controller = "Home", action = "Post" });
 
             routes.MapRoute(
+                name: "CvPdf",
+                url: "cv/{id}-pdf",
+                defaults: new { controller = "Home", action = "CvPdf" });
+
+            routes.MapRoute(
                 name: "Cv",
                 url: "cv/{id}",
                 defaults: new { controller = "Home", action = "Cv" });

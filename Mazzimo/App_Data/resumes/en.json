@@ -1,5 +1,5 @@
 ﻿{
-	Intro : 'A versatile software developer with great passion for technology, great ability to problem-solving and great attitude to learn quickly. I’m a passionate programmer that likes to put hands on code in my spare time; I like to work with cutting-edge technologies and methodologies. Experienced in working in Agile teams (Scrum).',
+	Intro : 'A versatile software developer with great passion for technology, great ability to problem-solving and great attitude to learn quickly. I’m a passionate programmer that likes to put hands on code in my spare time; I like to work with cutting-edge technologies and methodologies. Experienced in working in Agile teams (Scrum). Currently strongly interested on expanding my experience on Javascript frameworks.',
 	WorkingExperienceDesc : 'Working Experience',
 	EducationDesc : 'Education',
 	SkillsDesc : 'Skills',
@@ -12,7 +12,7 @@
 			RoleName : 'Web Developer/Software Engineer',
 			DateStart : "2014-09-01T00:00:00.000Z",
 			DateEnd : null,
-			Description : 'Reading Room is a digital agency with offices in UK, Singapore, Australia, Thailand and Hong Kong. My main task consist in following the development lifecycle of some of the .Net projects (mainly Sitecore and Umbraco), from analysis to maintenance.',
+			Description : 'Reading Room is a digital agency based in UK recently acquired by Idox Group. My main task consist in following the development lifecycle of some of the .Net projects (mainly Sitecore and Umbraco), from analysis to maintenance.',
 			Skills : [
 				{ 
 					Id:'csharp',
@@ -334,6 +334,48 @@
 			]
 		},
 		{
+			Name : 'Mazzimo.fr',
+			Logo : '../Images/cvimage_400x400.png',
+			PeriodDescription : 'From 2015',
+			Website : 'https://github.com/mazzimo/blog',
+			ProjectType : 'Website',
+			Description : 'Personal blog, hosted on azure and completely open source.',
+			Skills : [
+				{ 
+					Id:'csharp',
+					Desc : 'c#'
+				},
+				{ 
+					Id:'dotnet',
+					Desc : '.Net'
+				},
+				{ 
+					Id:'aspnetmvc',
+					Desc : 'ASP.NET MVC'
+				},
+				{ 
+					Id:'bootstrap',
+					Desc : 'Bootstrap'
+				},
+				{ 
+					Id:'angularjs',
+					Desc : 'Angular JS'
+				},
+				{ 
+					Id:'jasmine',
+					Desc : 'Jasmine'
+				},				
+				{ 
+					Id:'css',
+					Desc : 'CSS'
+				},
+				{ 
+					Id:'azure',
+					Desc : 'Azure'
+				}
+			]
+		},		
+		{
 			Name : 'RandomiceMe',
 			Logo : '../Images/Companies/Randomice.png',
 			PeriodDescription : 'From 2014',
@@ -493,11 +535,11 @@
 					Desc : 'TDD',
 					Percentage : 65
 				},
-				{ 
-					Id:'unittesting',
-					Desc : 'Unit Testing',
-					Percentage : 80
-				},
+        {
+          "Id": 'unittesting',
+          "Desc": 'Unit Testing',
+          "Percentage": 80
+        },
 				{ 
 					Id:'rabbitmq',
 					Desc : 'RabbitMQ',
@@ -542,6 +584,11 @@
 					Id:'soap',
 					Desc : 'SOAP',
 					Percentage : 85
+				},
+				{
+					Id:'jasmine',
+					Desc : 'Jasmine',
+					Percentage : 50				
 				}
 	]
 }

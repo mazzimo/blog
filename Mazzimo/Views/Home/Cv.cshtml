@@ -6,6 +6,7 @@
     ViewBag.Intro = Model.Intro;
     var totalUrl = String.Format("{0}{1}{2}{3}", Request.Url.Scheme, Uri.SchemeDelimiter, Request.Url.Authority, Request.Url.AbsolutePath);
     string baseUrl = Request.Url.Scheme + "://" + Request.Url.Authority + Request.ApplicationPath.TrimEnd('/');
+    var pdfUrl = Url.Action("CvPdf", new { id = ViewBag.Id });
 }
 
 @section metatags {
@@ -45,9 +46,14 @@
 }
     <div ng-app="AngularApp" ng-controller="CvController as ctrl" >
         
-			  <div class="col-lg-6 col-md-8 col-sm-8 singlecol">
-				<h1>@Model.WorkingExperienceDesc</h1>
+              
 
+			  <div class="col-lg-6 col-md-8 col-sm-8 singlecol">
+                <a href="@pdfUrl" class="shadow skill-exp pdfDownload" target="_blank" >Pdf Download</a>
+    
+                <h1>@Model.WorkingExperienceDesc</h1>
+
+                
                 <div ng-if="ctrl.hasFilter()">
                     Selected:
                     <div class="skill-exp shadow" ng-repeat="selSkill in ctrl.filter"><a href ng-click="ctrl.removeFilter(selSkill)">{{selSkill.Desc}}</a></div>

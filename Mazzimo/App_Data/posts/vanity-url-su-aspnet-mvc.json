@@ -1,9 +1,11 @@
 ﻿{
 	Code : "vanity-url-su-aspnet-mvc",
-	Title : "Vanity URL su Asp.Net MVC",
+    Title: "Vanity URL su Asp.Net MVC",
+    PostDate: "2013-03-27T00:00Z",
 	Teaser : "Oggi parlero' di come implementare i vanity URL nelle nostre web application su ASP.NET MVC.",
 	Tags : [ ".NET", "ASP.NET", "ASP.NET MVC", "c#", "Vanity URL" ],
-	ImageUrl : "http://1.bp.blogspot.com/-g2xLwQjt9Sw/UVL6-cQJcJI/AAAAAAAAAI8/DuHGkzWH0Kg/s1600/clean_urls.png",
+  ImageUrl: "http://1.bp.blogspot.com/-g2xLwQjt9Sw/UVL6-cQJcJI/AAAAAAAAAI8/DuHGkzWH0Kg/s1600/clean_urls.png",
+  ImageWidth:  574, ImageHeight: 300,
 	Content : "In questi giorni sto notando tramite il contatore che le visite di questo blog stanno quasi raggiungendo la straordinaria cifra di ben 1000 visitatori, rendendo il blog stesso il piu' letto tra le persone che lo visitano.
 
 Eh gia, precedentemente era il secondo.

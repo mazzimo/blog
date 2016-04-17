@@ -39,6 +39,17 @@ namespace Mazzimo.Controllers
             return View(cv);
         }
 
+        public ActionResult CvPrint(string id)
+        {
+            var cv = _cvRepo.GetResumeFromLanguageCode(id);
+            if (cv == null)
+                return HttpNotFound();
+            Response.Cache.SetExpires(DateTime.Now.AddYears(1));
+            Response.Cache.SetCacheability(HttpCacheability.Public);
+
+            return View(cv);
+        }
+
         public ActionResult Post(string id)
         {
             var post = _postRepo.GetById(id);

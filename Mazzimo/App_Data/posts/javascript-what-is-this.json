@@ -1,5 +1,6 @@
 ﻿{
-	Code : "javascript-what-is-this",
+    Code: "javascript-what-is-this",
+    PostDate: "2016-03-30T00:00Z",
 	Content : "Compared to other languages like C# and Java, the value of the keyword *this* in javascript is everything but straight-forward. The key concept is that the value is not pre-determined by the position which the keyword is placed but when the related code is executed. Here's a little comparison to let me explain a bit better:
 
 **1) in Javascript you can write *this* everywhere, in c# not.**
@@ -72,7 +73,6 @@ Yep. You can literally do that, by executing the function *call* from any functi
 *Call* is a function that accepts as first parameter the value we want to assign to *this*, and then the rest of the parameters (in our example, none). We are actually telling the system to \"Execute the function *funcRef* from the instance *foo*\"
 ",
 	Title : "Journey of a c# developer into Javascript part 1 - What is \"this\"?",
-	ImageUrl : "/Images/cvimage_400x400.png",
 	Teaser : "One of the most difficult concept to grasp in javascript if you come from a stronged typed language background (like me) is the meaning of the \"this\" keyword.",
 	Tags : [ "Javascript","this" ],
   NextPosts: [

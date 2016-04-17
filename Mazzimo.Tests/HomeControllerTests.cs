@@ -89,6 +89,33 @@ namespace Mazzimo.Tests
         }
 
         [TestMethod]
+        public void CvPdfShouldReturnIfFound()
+        {
+            var foundCv = new Cv();
+            _cvRepo.Setup(r => r.GetResumeFromLanguageCode(It.IsAny<string>())).Returns(foundCv);
+
+            var result = _controller.CvPdf("test") as ViewResult;
+
+            Assert.IsNotNull(result);
+            Assert.IsNotNull(result.ViewData.Model);
+            Assert.IsInstanceOfType(result.ViewData.Model, typeof(Cv));
+
+            var cvResult = result.ViewData.Model as Cv;
+
+            Assert.AreEqual(foundCv, cvResult);
+        }
+
+        [TestMethod]
+        public void CvPdf404()
+        {
+            _cvRepo.Setup(r => r.GetResumeFromLanguageCode(It.IsAny<string>())).Returns((Cv)null);
+            var result = _controller.CvPdf("test");
+            Assert.IsInstanceOfType(result, typeof(HttpNotFoundResult));
+        }
+
+
+
+        [TestMethod]
         public void PostShouldReturnIfFound()
         {
             var foundPost = new Post();

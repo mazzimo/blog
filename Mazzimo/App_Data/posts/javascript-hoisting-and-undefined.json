@@ -1,5 +1,6 @@
 ﻿{
-	Code : "javascript-hoisting-and-undefined",
+    Code: "javascript-hoisting-and-undefined",
+    PostDate: "2016-04-04T00:00Z",
 	Content : "Another weird thing to getting used to in javascript if you come from a c# background is **variable declaration**.
 
 the scope of a variable in javascript is in fact just related to the function where is declared and **NOT** to the block. this means that if you declare a variable inside a if block like this:
@@ -42,7 +43,7 @@ this clearly differs from what we are familiar with in c#. in fact, when we decl
     //o is going to be null as this is the default value of Object
     Object o;
 
-additionally, when in c# we declare a variable using the *var* keyword, we compiler cannot know from which class need to get the default value. so it won't even compile if we don't assign a value on the declaration.
+additionally, when in c# we declare a variable using the *var* keyword, the compiler cannot know from which class need to get the default value. so it won't even compile if we don't assign a value on the declaration.
 
     //this doesn't compile in c#, giving 'Implicitly-typed variables must be initialized' error
     var aaa;
@@ -50,7 +51,6 @@ additionally, when in c# we declare a variable using the *var* keyword, we compi
 that's clearly because in c# there's no concept of *undefined value* .
 ",
 	Title : "Journey of a c# developer into Javascript part 2 - Variable hoisting & undefined value",
-	ImageUrl : "/Images/cvimage_400x400.png",
 	Teaser : "Another weird thing to getting used to in javascript if you come from a c# background is variable declaration.",
 	Tags : [ "Javascript","hoisting", "undefined" ],
   NextPosts: [

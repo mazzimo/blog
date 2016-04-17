@@ -10,7 +10,10 @@ namespace Mazzimo
         {
             bundles.Add(new StyleBundle("~/Content/css")
                 .Include("~/Content/site.css"));
-        
+
+            bundles.Add(new StyleBundle("~/Content/cssPdf")
+                .Include("~/Content/Pdf.css"));
+
             bundles.Add(new ScriptBundle("~/bundles/AngularApp")
                 .IncludeDirectory("~/Scripts/Controllers", "*.js")
                 .IncludeDirectory("~/Scripts/Factories", "*.js")

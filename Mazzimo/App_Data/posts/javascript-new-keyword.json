@@ -13,7 +13,7 @@ but what's the real **reason** to use a constructor? basically is to initialize 
 
 In c# those members are described inside the definition of a class. When you call a constructor of a specific class you are doing just that: create an object with the same exact members defined in the class definition. 
 
-In Javascript we cannot define classes, but we can take advantage of the fact that is a **weakly typing** language. This allows us to describe those members inside a function.
+In Javascript we cannot define classes, but we can take advantage of the fact that is a **weakly typed** language. This allows us to describe those members inside a function.
 
     function Example() {
         this.intMember = 1;

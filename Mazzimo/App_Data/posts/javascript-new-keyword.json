@@ -1,0 +1,68 @@
+﻿{
+    Code: "javascript-new-keyword",
+    PostDate: "2016-04-21T00:00Z",
+	Content : "Using the *new* keyword in Javascript is really confusing at first sight: after all Javascript doesn't have a concept of classes, so why having a *new* keyword?
+
+In c# you can use the *new* keyword ONLY for some specific methods called *constructors*: those are functions that have the following restrictions:
+
+1) Got the same name as the Class that contains the function
+2) Cannot be static
+3) Cannot return any value
+
+but what's the real **reason** to use a constructor? basically is to initialize an object with some specific properties and methods.
+
+Those members are described in c# by the Class of the constructor we are calling.
+
+Since in Javascript we don't have classes, this members can be described inside any function
+
+    function Example() {
+        this.intMember = 1;
+        this.stringMember = 'abc';
+        this.funcMember = function(addThisToIntMember) {
+            this.intMember = this.intMember + addThisToIntMember;
+        }
+    }
+
+to make a loose comparison, in Javascript a function can act **as both a Class and a Constructor at the same time**.
+
+if you call a function with the *new* keyword, the following steps will be executed:
+1) a object is created;
+2) all the members described in the *prototype* property of the called function are copied to the new object;
+3) the function is executed and the created object associated with the keyword *this* ([click here](http://google.com) if this sounds weird)
+4) returns the object;
+
+translated in verbose code the *new* operator behaves like the following code:
+
+    //this line
+    var a = new Example();
+    
+
+    //has similar behaviour as this
+    var b = Object.create(Example.prototype);
+    Example.call(b);
+
+**BEAR IN MIND** that I've used the word **SIMILAR**, not **EQUAL**. in fact there are some other logic under the hood: for example using the *new* keyword we can use the operator *instanceof* to identify if an object was created with a specific function as constructor:
+
+    var a = new Example();
+    var b = Object.create(Example.prototype);
+    Example.call(b);
+
+    console.log(a instanceof Example) //true;
+    console.log(b instanceof Example) //false;
+",
+	Title : "Journey of a c# developer into Javascript part 3 - the \"new\" operator",
+	Teaser : "Using the *new* keyword in Javascript is really confusing at first sight: after all Javascript doesn't have a concept of classes, so why having a new keyword?",
+	Tags : [ "Javascript","new" ],
+  NextPosts: [
+    {
+      "Code": "multiple-file-upload-aspnet-mvc-angular",
+      "Title": "Multiple file upload with Asp.net MVC and AngularJS"
+    },
+    {
+        "Code": "javascript-what-is-this",
+        "Title": "Journey of a c# developer into Javascript part 1 - What is \"this\"?"
+    }
+  ]
+}
+
+

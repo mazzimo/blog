@@ -28,7 +28,7 @@ to make a loose comparison, in Javascript a function can act **as both a Class a
 if you call a function with the *new* keyword, the following steps will be executed:
 1) a object is created;
 2) all the members described in the *prototype* property of the called function are copied to the new object;
-3) the function is executed and the created object associated with the keyword *this* ([click here](http://google.com) if this sounds weird)
+3) the function is executed and the created object associated with the keyword *this* ([click here](/javascript-what-is-this) if this sounds weird)
 4) returns the object;
 
 translated in verbose code the *new* operator behaves like the following code:

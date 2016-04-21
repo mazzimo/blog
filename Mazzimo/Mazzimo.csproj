@@ -217,6 +217,7 @@
     <Content Include="Images\Companies\spindex.png" />
     <Content Include="Images\Companies\webuild.jpg" />
     <Content Include="Images\cvimage_400x400.png" />
+    <Content Include="Images\fromcsharptojs.png" />
     <Content Include="Images\GreyGeometricPattern2.jpg" />
     <Content Include="Images\icon-lang-eng.png" />
     <Content Include="Images\icon-lang-ita.png" />
@@ -279,6 +280,7 @@
     <Content Include="App_Data\posts\multiple-file-upload-aspnet-mvc-angular.json" />
     <Content Include="Content\PdfResumes\cv-en.pdf" />
     <Content Include="Content\PdfResumes\cv-it.pdf" />
+    <Content Include="App_Data\posts\javascript-new-keyword.json" />
     <None Include="Properties\PublishProfiles\mazzimo - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\mazzimo - Web Deploy.pubxml" />
     <Content Include="Views\Home\Post.cshtml" />

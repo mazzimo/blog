@@ -53,7 +53,7 @@ translated in verbose code the *new* operator behaves like the following code:
 	Title : "Journey of a c# developer into Javascript part 3 - the \"new\" operator",
 	Teaser : "Using the *new* keyword in Javascript is really confusing at first sight: after all Javascript doesn't have a concept of classes, so why having a new keyword?",
   Tags: [ "Javascript", "new" ],
-  ImageUrl: "/Images/fromcsharptojs.png",
+  ImageUrl: "http://mazzimo.fr/Images/fromcsharptojs.png",
   ImageWidth:  829, ImageHeight: 621,
   NextPosts: [
     {

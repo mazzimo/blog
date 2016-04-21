@@ -217,6 +217,7 @@
     <Content Include="Images\Companies\spindex.png" />
     <Content Include="Images\Companies\webuild.jpg" />
     <Content Include="Images\cvimage_400x400.png" />
+    <Content Include="Images\fromcsharptojs.png" />
     <Content Include="Images\GreyGeometricPattern2.jpg" />
     <Content Include="Images\icon-lang-eng.png" />
     <Content Include="Images\icon-lang-ita.png" />

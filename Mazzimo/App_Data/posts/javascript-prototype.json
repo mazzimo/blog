@@ -1,7 +1,30 @@
 ﻿{
     Code: "javascript-prototype",
     PostDate: "2016-07-01T00:00Z",
-	Content : "test test test",
+	Content : "next chapter of our journey to Javascript is about **inheritance**.
+
+anyone knows that inheritance in javascript is based on *prototypes*, but how this can be translated for people with knowledge of classical inheritance?
+
+classical inheritance allows us to reuse some code on multiple classes. this means that each object of a particular class has all the properties declared in itself plus the members of its superclass.
+
+    class SuperClass
+    {
+        public int Number { get;set;}
+        public string MethodThatReturnsAString()
+        {
+            return this.Number.ToString();
+        }
+    }
+
+    class SubClass : SuperClass
+    {
+        public int MethodThatReturnsAInt()
+        {
+            return this.Number;
+        }
+    }
+
+as we already know",
 	Title : "Journey of a c# developer into Javascript part 4 - inheritance",
 	Teaser : "Using the *new* keyword in Javascript is really confusing at first sight: after all Javascript doesn't have a concept of classes, so why having a new keyword?",
   Tags: [ "Javascript", "inheritance" , "prototype" ],

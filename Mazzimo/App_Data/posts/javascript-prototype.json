@@ -1,0 +1,22 @@
+﻿{
+    Code: "javascript-prototype",
+    PostDate: "2016-07-01T00:00Z",
+	Content : "test test test",
+	Title : "Journey of a c# developer into Javascript part 4 - inheritance",
+	Teaser : "Using the *new* keyword in Javascript is really confusing at first sight: after all Javascript doesn't have a concept of classes, so why having a new keyword?",
+  Tags: [ "Javascript", "inheritance" , "prototype" ],
+  ImageUrl: "http://mazzimo.fr/Images/fromcsharptojs.png",
+  ImageWidth:  829, ImageHeight: 621,
+  NextPosts: [
+      {
+      "Code": "javascript-new-keyword",
+      "Title": "Journey of a c# developer into Javascript part 3 - the \"new\" operator"
+      },
+      {
+      "Code": "multiple-file-upload-aspnet-mvc-angular",
+      "Title": "Multiple file upload with Asp.net MVC and AngularJS"
+    }
+  ]
+}
+
+

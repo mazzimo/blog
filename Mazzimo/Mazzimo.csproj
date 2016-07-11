@@ -281,6 +281,7 @@
     <Content Include="Content\PdfResumes\cv-en.pdf" />
     <Content Include="Content\PdfResumes\cv-it.pdf" />
     <Content Include="App_Data\posts\javascript-new-keyword.json" />
+    <Content Include="App_Data\posts\javascript-prototype.json" />
     <None Include="Properties\PublishProfiles\mazzimo - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\mazzimo - Web Deploy.pubxml" />
     <Content Include="Views\Home\Post.cshtml" />

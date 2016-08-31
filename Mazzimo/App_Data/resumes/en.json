@@ -14,61 +14,65 @@
 			RoleName : 'Web Developer/Software Engineer',
 			DateStart : "2014-09-01T00:00:00.000Z",
 			DateEnd : null,
-			Description : 'Reading Room is a digital agency based in UK recently acquired by Idox Group. My main task consist in following the development lifecycle of some of the .Net projects (mainly Sitecore and Umbraco), from analysis to maintenance.',
-			Skills : [
-				{ 
-					Id:'csharp',
-					Desc : 'c#'
-				},
-				{ 
-					Id:'javascript',
-					Desc : 'JavaScript'
-				},
-				{ 
-					Id:'css',
-					Desc : 'CSS'
-				},
-				{ 
-					Id:'dotnet',
-					Desc : '.Net'
-				},
-				{ 
-					Id:'sitecore',
-					Desc : 'Sitecore'
-				},
-				{ 
-					Id:'umbraco',
-					Desc : 'Umbraco'
-				},
-				{ 
-					Id:'aspnetmvc',
-					Desc : 'ASP.NET MVC'
-				},
-				{ 
-					Id:'aspnetwebforms',
-					Desc : 'ASP.NET WebForms'
-				},
-				{ 
-					Id:'sqlserver',
-					Desc : 'SQL Server'
-				},
-				{ 
-					Id:'git',
-					Desc : 'Git'
-				},
-				{ 
-					Id:'ci',
-					Desc : 'Continuos Integration'
-				},
-				{ 
-					Id:'jenkins',
-					Desc : 'Jenkins'
-				},
-				{ 
-					Id:'svn',
-					Desc : 'SVN'
-				}
-			]
+			Description : 'Reading Room is a digital agency based in UK recently acquired by Idox Group. My main task consist in following the development lifecycle of some of the .Net projects (mainly Sitecore and Kentico), from analysis to maintenance.',
+      Skills: [
+        {
+          "Id": "csharp",
+          "Desc": "c#"
+        },
+        {
+          "Id": "javascript",
+          "Desc": "JavaScript"
+        },
+        {
+          "Id": "css",
+          "Desc": "CSS"
+        },
+        {
+          "Id": "dotnet",
+          "Desc": ".Net"
+        },
+        {
+          "Id": "sitecore",
+          "Desc": "Sitecore"
+        },
+        {
+          "Id": "umbraco",
+          "Desc": "Umbraco"
+        },
+        {
+          "Id": "kentico",
+          "Desc": "Kentico"
+        },
+        {
+          "Id": "aspnetmvc",
+          "Desc": "ASP.NET MVC"
+        },
+        {
+          "Id": "aspnetwebforms",
+          "Desc": "ASP.NET WebForms"
+        },
+        {
+          "Id": "sqlserver",
+          "Desc": "SQL Server"
+        },
+        {
+          "Id": "git",
+          "Desc": "Git"
+        },
+        {
+          "Id": "ci",
+          "Desc": "Continuos Integration"
+        },
+        {
+          "Id": "jenkins",
+          "Desc": "Jenkins"
+        },
+        {
+          "Id": "svn",
+          "Desc": "SVN"
+        }
+      ]
 
 		},
 		{
@@ -431,168 +435,173 @@
 			Description : ''
 		}
 	],
-	Skills : [
-				{ 
-					Id:'oop',
-					Desc : 'Object Oriented Programming',
-					Percentage : 95
-				},
-				{ 
-					Id:'designpatterns',
-					Desc : 'Design Patterns',
-					Percentage : 90
-				},
-				{ 
-					Id:'csharp',
-					Desc : 'c#',
-					Percentage : 95
-				},
-				{ 
-					Id:'javascript',
-					Desc : 'JavaScript',
-					Percentage : 75
-				},
-				{ 
-					Id:'jquery',
-					Desc : 'jQuery',
-					Percentage : 75
-				},
-				{ 
-					Id:'css',
-					Desc : 'CSS',
-					Percentage : 75
-				},
-				{ 
-					Id:'bootstrap',
-					Desc : 'Bootstrap',
-					Percentage : 75
-				},
-				{ 
-					Id:'dotnet',
-					Desc : '.Net',
-					Percentage : 95
-				},
-				{ 
-					Id:'sitecore',
-					Desc : 'Sitecore',
-					Percentage : 55
-				},
-				{ 
-					Id:'umbraco',
-					Desc : 'Umbraco',
-					Percentage : 55
-				},
-				{ 
-					Id:'aspnetmvc',
-					Desc : 'ASP.NET MVC',
-					Percentage : 85
-				},
-				{ 
-					Id:'aspnetwebforms',
-					Desc : 'ASP.NET WebForms',
-					Percentage : 85
-				},
-				{ 
-					Id:'sqlserver',
-					Desc : 'SQL Server',
-					Percentage : 90
-				},
-				{ 
-					Id:'git',
-					Desc : 'Git',
-					Percentage : 70
-				},
-				{ 
-					Id:'ci',
-					Desc : 'Continuos Integration',
-					Percentage : 70
-				},
-				{ 
-					Id:'jenkins',
-					Desc : 'Jenkins',
-					Percentage : 60
-				},
-				{ 
-					Id:'svn',
-					Desc : 'SVN',
-					Percentage : 80
-				},
-				{ 
-					Id:'mongodb',
-					Desc : 'Mongo DB',
-					Percentage : 70
-				},
-				{ 
-					Id:'rest',
-					Desc : 'REST',
-					Percentage : 85
-				},
-				{ 
-					Id:'hateos',
-					Desc : 'HATEOS',
-					Percentage : 60
-				},
-				{ 
-					Id:'tdd',
-					Desc : 'TDD',
-					Percentage : 65
-				},
-        {
-          "Id": 'unittesting',
-          "Desc": 'Unit Testing',
-          "Percentage": 80
-        },
-				{ 
-					Id:'rabbitmq',
-					Desc : 'RabbitMQ',
-					Percentage : 55
-				},
-				{ 
-					Id:'ioc',
-					Desc : 'IoC',
-					Percentage : 85
-				},
-				{ 
-					Id:'vbnet',
-					Desc : 'VB.NET',
-					Percentage : 95
-				},
-				{ 
-					Id:'winforms',
-					Desc : 'Windows Forms',
-					Percentage : 90
-				},
-				{ 
-					Id:'angularjs',
-					Desc : 'Angular JS',
-					Percentage : 60
-				},
-				{ 
-					Id:'azure',
-					Desc : 'Azure',
-					Percentage : 60
-				},
-				{ 
-					Id:'windowsphone',
-					Desc : 'Windows Phone Development',
-					Percentage : 60
-				},
-				{ 
-					Id:'xaml',
-					Desc : 'XAML',
-					Percentage : 60
-				},
-				{ 
-					Id:'soap',
-					Desc : 'SOAP',
-					Percentage : 85
-				},
-				{
-					Id:'jasmine',
-					Desc : 'Jasmine',
-					Percentage : 50				
-				}
-	]
+  Skills: [
+    {
+      "Id": "oop",
+      "Desc": "Object Oriented Programming",
+      "Percentage": 95
+    },
+    {
+      "Id": "designpatterns",
+      "Desc": "Design Patterns",
+      "Percentage": 90
+    },
+    {
+      "Id": "csharp",
+      "Desc": "c#",
+      "Percentage": 95
+    },
+    {
+      "Id": "javascript",
+      "Desc": "JavaScript",
+      "Percentage": 75
+    },
+    {
+      "Id": "jquery",
+      "Desc": "jQuery",
+      "Percentage": 75
+    },
+    {
+      "Id": "css",
+      "Desc": "CSS",
+      "Percentage": 75
+    },
+    {
+      "Id": "bootstrap",
+      "Desc": "Bootstrap",
+      "Percentage": 75
+    },
+    {
+      "Id": "dotnet",
+      "Desc": ".Net",
+      "Percentage": 95
+    },
+    {
+      "Id": "sitecore",
+      "Desc": "Sitecore",
+      "Percentage": 55
+    },
+    {
+      "Id": "umbraco",
+      "Desc": "Umbraco",
+      "Percentage": 55
+    },
+    {
+      "Id": "kentico",
+      "Desc": "Kentico",
+      "Percentage": 65
+    },
+    {
+      "Id": "aspnetmvc",
+      "Desc": "ASP.NET MVC",
+      "Percentage": 85
+    },
+    {
+      "Id": "aspnetwebforms",
+      "Desc": "ASP.NET WebForms",
+      "Percentage": 85
+    },
+    {
+      "Id": "sqlserver",
+      "Desc": "SQL Server",
+      "Percentage": 90
+    },
+    {
+      "Id": "git",
+      "Desc": "Git",
+      "Percentage": 70
+    },
+    {
+      "Id": "ci",
+      "Desc": "Continuos Integration",
+      "Percentage": 70
+    },
+    {
+      "Id": "jenkins",
+      "Desc": "Jenkins",
+      "Percentage": 60
+    },
+    {
+      "Id": "svn",
+      "Desc": "SVN",
+      "Percentage": 80
+    },
+    {
+      "Id": "mongodb",
+      "Desc": "Mongo DB",
+      "Percentage": 70
+    },
+    {
+      "Id": "rest",
+      "Desc": "REST",
+      "Percentage": 85
+    },
+    {
+      "Id": "hateos",
+      "Desc": "HATEOS",
+      "Percentage": 60
+    },
+    {
+      "Id": "tdd",
+      "Desc": "TDD",
+      "Percentage": 65
+    },
+    {
+      "Id": "unittesting",
+      "Desc": "Unit Testing",
+      "Percentage": 80
+    },
+    {
+      "Id": "rabbitmq",
+      "Desc": "RabbitMQ",
+      "Percentage": 55
+    },
+    {
+      "Id": "ioc",
+      "Desc": "IoC",
+      "Percentage": 85
+    },
+    {
+      "Id": "vbnet",
+      "Desc": "VB.NET",
+      "Percentage": 95
+    },
+    {
+      "Id": "winforms",
+      "Desc": "Windows Forms",
+      "Percentage": 90
+    },
+    {
+      "Id": "angularjs",
+      "Desc": "Angular JS",
+      "Percentage": 60
+    },
+    {
+      "Id": "azure",
+      "Desc": "Azure",
+      "Percentage": 60
+    },
+    {
+      "Id": "windowsphone",
+      "Desc": "Windows Phone Development",
+      "Percentage": 60
+    },
+    {
+      "Id": "xaml",
+      "Desc": "XAML",
+      "Percentage": 60
+    },
+    {
+      "Id": "soap",
+      "Desc": "SOAP",
+      "Percentage": 85
+    },
+    {
+      "Id": "jasmine",
+      "Desc": "Jasmine",
+      "Percentage": 50
+    }
+  ]
 }
 
 

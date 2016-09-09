@@ -44,8 +44,6 @@ namespace Mazzimo.Controllers
             var cv = _cvRepo.GetResumeFromLanguageCode(id);
             if (cv == null)
                 return HttpNotFound();
-            Response.Cache.SetExpires(DateTime.Now.AddYears(1));
-            Response.Cache.SetCacheability(HttpCacheability.Public);
 
             return View(cv);
         }

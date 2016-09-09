@@ -1,5 +1,8 @@
-﻿using Mazzimo.Models;
+﻿using Mazzimo.ContentResolvers;
+using Mazzimo.Factories;
+using Mazzimo.Models;
 using Mazzimo.Repositories;
+using Mazzimo.ViewModels;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -13,11 +16,18 @@ namespace Mazzimo.Controllers
     {
         IPostRepository _postRepo;
         IResumeRepository _cvRepo;
+        IContextFactory _ctxFactory;
+        IPostContentResolver _postContentResolver;
+
         public HomeController(IPostRepository postRepo,
-                              IResumeRepository cvRepo)
+                              IResumeRepository cvRepo,
+                              IContextFactory ctxFactory,
+                              IPostContentResolver postContentResolver)
         {
             _postRepo = postRepo;
             _cvRepo = cvRepo;
+            _ctxFactory = ctxFactory;
+            _postContentResolver = postContentResolver;
         }
 
         public ActionResult Index()
@@ -27,7 +37,9 @@ namespace Mazzimo.Controllers
             if (post == null)
                 post = _postRepo.GetIntroductionPost();
 
-            return View(post);
+            var viewModel = GetPostViewModel(post);
+
+            return View(viewModel);
         }
 
         public ActionResult Cv(string id)
@@ -51,10 +63,45 @@ namespace Mazzimo.Controllers
         public ActionResult Post(string id)
         {
             var post = _postRepo.GetById(id);
+
             if (post == null)
                 return HttpNotFound();
 
-            return View(post);
+            var viewModel = GetPostViewModel(post);
+
+            return View(viewModel);
+        }
+
+        private RenderedPostViewModel GetPostViewModel(Post post)
+        {
+            var currentUri = _ctxFactory.GetCurrentRequestUri();
+
+            var result = new RenderedPostViewModel()
+            {
+                Post = post,
+                RenderedContent = _postContentResolver.ExtractContent(post),
+                TotalUrl = GetTotalUrl(currentUri)
+            };
+
+            if (String.IsNullOrEmpty(result.Post.ImageUrl))
+            {
+                post.ImageUrl = GetBaseUrl(currentUri) + "/Images/cvimage_400x400.png";
+                post.ImageHeight = 400;
+                post.ImageWidth = 400;
+            }
+
+            return result;
+
+        }
+
+        private string GetBaseUrl(Uri uri)
+        { 
+            return uri.Scheme + "://" + uri.Authority;
+        }
+
+        private string GetTotalUrl(Uri uri)
+        {
+            return String.Format("{0}{1}{2}{3}", uri.Scheme, Uri.SchemeDelimiter, uri.Authority, uri.AbsolutePath);
         }
     }
 }

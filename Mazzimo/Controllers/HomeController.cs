@@ -18,6 +18,7 @@ namespace Mazzimo.Controllers
         IResumeRepository _cvRepo;
         IContextFactory _ctxFactory;
         IPostContentResolver _postContentResolver;
+        string _baseUri;
 
         public HomeController(IPostRepository postRepo,
                               IResumeRepository cvRepo,
@@ -28,6 +29,7 @@ namespace Mazzimo.Controllers
             _cvRepo = cvRepo;
             _ctxFactory = ctxFactory;
             _postContentResolver = postContentResolver;
+            _baseUri = _ctxFactory.GetBaseUri();
         }
 
         public ActionResult Index()
@@ -36,6 +38,8 @@ namespace Mazzimo.Controllers
 
             if (post == null)
                 post = _postRepo.GetIntroductionPost();
+
+            SetDefaultImageOnPost(post);
 
             var viewModel = GetPostViewModel(post);
 
@@ -72,6 +76,13 @@ namespace Mazzimo.Controllers
             return View(viewModel);
         }
 
+        private void SetDefaultImageOnPost(Post post)
+        {
+            post.ImageUrl = _baseUri + "/Images/cvimage_400x400.png";
+            post.ImageHeight = 400;
+            post.ImageWidth = 400;
+        }
+
         private RenderedPostViewModel GetPostViewModel(Post post)
         {
             var currentUri = _ctxFactory.GetCurrentRequestUri();
@@ -85,18 +96,11 @@ namespace Mazzimo.Controllers
 
             if (String.IsNullOrEmpty(result.Post.ImageUrl))
             {
-                post.ImageUrl = GetBaseUrl(currentUri) + "/Images/cvimage_400x400.png";
-                post.ImageHeight = 400;
-                post.ImageWidth = 400;
+                SetDefaultImageOnPost(post);
             }
 
             return result;
 
-        }
-
-        private string GetBaseUrl(Uri uri)
-        { 
-            return uri.Scheme + "://" + uri.Authority;
         }
 
         private string GetTotalUrl(Uri uri)

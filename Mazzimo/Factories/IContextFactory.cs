@@ -10,5 +10,6 @@ namespace Mazzimo.Factories
     public interface IContextFactory
     {
         Uri GetCurrentRequestUri();
+        string GetBaseUri();
     }
 }

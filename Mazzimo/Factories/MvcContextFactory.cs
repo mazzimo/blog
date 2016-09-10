@@ -11,5 +11,11 @@ namespace Mazzimo.Factories
         {
             return System.Web.HttpContext.Current.Request.Url;
         }
+
+        public string GetBaseUri()
+        {
+            var uri = GetCurrentRequestUri();
+            return uri.Scheme + "://" + uri.Authority;
+        }
     }
 }

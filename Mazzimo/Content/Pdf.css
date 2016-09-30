@@ -39,7 +39,7 @@
         section {
             padding-top: 20px;
             padding-bottom: 50px;
-            border-top: 1px solid lightgrey;
+            border-bottom: 1px solid lightgrey;
         }
 
         body {
@@ -77,4 +77,10 @@
         .workExperienceDesc {
             padding: 10px 0 10px 0;
         }
+
+        .workExperiences, .personalProjects {
+            page-break-after: always;
+        }
+
+
 

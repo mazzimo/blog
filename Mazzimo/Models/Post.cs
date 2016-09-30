@@ -10,7 +10,7 @@ namespace Mazzimo.Models
     public class Post
     {
         public string Code { get;set; }
-        public string Content { get; set; }
+        public string ContentFile { get; set; }
         public string Title { get; set; }
         public string Teaser { get; set; }
         public string ImageUrl { get; set; }

@@ -13,6 +13,8 @@ namespace Mazzimo.App_Start
     using System.Web.Http;
     using Ninject.Web.WebApi;
     using Mazzimo.Repositories;
+    using Mazzimo.Factories;
+    using Mazzimo.ContentResolvers;
 
     public static class NinjectWebCommon 
     {
@@ -66,6 +68,8 @@ namespace Mazzimo.App_Start
         {
             kernel.Bind<IPostRepository>().To<FilePostRepository>();
             kernel.Bind<IResumeRepository>().To<FileResumeRespository>();
+            kernel.Bind<IContextFactory>().To<MvcContextFactory>();
+            kernel.Bind<IPostContentResolver>().To<CommonMarkPostContentResolver>();
         }        
     }
 }

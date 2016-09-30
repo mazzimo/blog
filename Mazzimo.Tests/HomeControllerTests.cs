@@ -5,22 +5,33 @@ using Moq;
 using Mazzimo.Repositories;
 using Mazzimo.Models;
 using System.Web.Mvc;
+using Shouldly;
+using Mazzimo.Factories;
+using Mazzimo.ContentResolvers;
+using Mazzimo.ViewModels;
 
 namespace Mazzimo.Tests
 {
     [TestClass]
     public class HomeControllerTests
     {
+        private const string TEST_RENDERED_CONTENT = "<h1>Test Rendered Content</h1>";
+        private readonly Uri TEST_URI = new Uri("http://mazzimo.fr/abc");
         private HomeController _controller;
         private Mock<IPostRepository> _postRepo;
         private Mock<IResumeRepository> _cvRepo;
+        private Mock<IContextFactory> _ctxFactory;
+        private Mock<IPostContentResolver> _postContentResolver;
 
         [TestInitialize]
         public void Setup()
         {
             _postRepo = new Mock<IPostRepository>();
             _cvRepo = new Mock<IResumeRepository>();
-            _controller = new HomeController(_postRepo.Object, _cvRepo.Object);
+            _ctxFactory = new Mock<IContextFactory>();
+            _postContentResolver = new Mock<IPostContentResolver>();
+            _controller = new HomeController(_postRepo.Object, _cvRepo.Object, _ctxFactory.Object, _postContentResolver.Object);
+            
         }
 
         [TestCleanup]
@@ -28,6 +39,8 @@ namespace Mazzimo.Tests
         {
             _postRepo = null;
             _cvRepo = null;
+            _ctxFactory = null;
+            _postContentResolver = null;
             _controller = null;
         }
 
@@ -36,16 +49,27 @@ namespace Mazzimo.Tests
         {
             var introPost = new Post();
             _postRepo.Setup(r => r.GetFirst()).Returns((Post)null); 
-            _postRepo.Setup(r => r.GetIntroductionPost()).Returns(introPost);
+            
+            _postRepo.Setup(r => r.GetIntroductionPost())
+                     .Returns(introPost);
+
+            _postContentResolver.Setup(r => r.ExtractContent(It.IsAny<Post>()))
+                                .Returns(TEST_RENDERED_CONTENT);
+
+            _ctxFactory.Setup(f => f.GetCurrentRequestUri())
+                       .Returns(TEST_URI);
 
             var result = _controller.Index() as ViewResult;
 
-            Assert.IsNotNull(result.ViewData.Model);
-            Assert.IsInstanceOfType(result.ViewData.Model, typeof(Post));
+            result.ViewData.Model.ShouldNotBeNull();
+            result.ViewData.Model.ShouldBeOfType<RenderedPostViewModel>();
 
-            var postResult = result.ViewData.Model as Post;
-
-            Assert.AreEqual(introPost, postResult); 
+            var postResult = result.ViewData.Model as RenderedPostViewModel;
+            var expectedTotalUrl = String.Format("{0}{1}{2}{3}", TEST_URI.Scheme, Uri.SchemeDelimiter, TEST_URI.Authority, TEST_URI.AbsolutePath);
+            
+            postResult.Post.ShouldBe(introPost);
+            postResult.RenderedContent.ShouldBe(TEST_RENDERED_CONTENT);
+            postResult.TotalUrl.ShouldBe(expectedTotalUrl); 
 
         }
 
@@ -55,13 +79,23 @@ namespace Mazzimo.Tests
             var firstPost = new Post();
             _postRepo.Setup(r => r.GetFirst()).Returns(firstPost);
 
+            _postContentResolver.Setup(r => r.ExtractContent(It.IsAny<Post>()))
+                    .Returns(TEST_RENDERED_CONTENT);
+
+            _ctxFactory.Setup(f => f.GetCurrentRequestUri())
+                       .Returns(TEST_URI);
+
             var result = _controller.Index() as ViewResult;
-            Assert.IsNotNull(result.ViewData.Model);
-            Assert.IsInstanceOfType(result.ViewData.Model, typeof(Post));
 
-            var postResult = result.ViewData.Model as Post;
+            result.ViewData.Model.ShouldNotBeNull();
+            result.ViewData.Model.ShouldBeOfType<RenderedPostViewModel>();
 
-            Assert.AreEqual(firstPost, postResult); 
+            var postResult = result.ViewData.Model as RenderedPostViewModel;
+            var expectedTotalUrl = String.Format("{0}{1}{2}{3}", TEST_URI.Scheme, Uri.SchemeDelimiter, TEST_URI.Authority, TEST_URI.AbsolutePath);
+
+            postResult.Post.ShouldBe(firstPost);
+            postResult.RenderedContent.ShouldBe(TEST_RENDERED_CONTENT);
+            postResult.TotalUrl.ShouldBe(expectedTotalUrl); 
 
         }
 
@@ -72,20 +106,23 @@ namespace Mazzimo.Tests
             _cvRepo.Setup(r => r.GetResumeFromLanguageCode(It.IsAny<string>())).Returns(foundCv);
 
             var result = _controller.Cv("test") as ViewResult;
-            Assert.IsNotNull(result.ViewData.Model);
-            Assert.IsInstanceOfType(result.ViewData.Model, typeof(Cv));
+
+            result.ViewData.Model.ShouldNotBeNull();
+            result.ViewData.Model.ShouldBeOfType<Cv>();
 
             var cvResult = result.ViewData.Model as Cv;
 
-            Assert.AreEqual(foundCv, cvResult); 
+            foundCv.ShouldBe(cvResult);
         }
 
         [TestMethod]
         public void Cv404()
         {
             _cvRepo.Setup(r => r.GetResumeFromLanguageCode(It.IsAny<string>())).Returns((Cv)null);
+
             var result = _controller.Cv("test");
-            Assert.IsInstanceOfType(result, typeof(HttpNotFoundResult));
+
+            result.ShouldBeOfType<HttpNotFoundResult>();
         }
 
         [TestMethod]
@@ -94,23 +131,26 @@ namespace Mazzimo.Tests
             var foundCv = new Cv();
             _cvRepo.Setup(r => r.GetResumeFromLanguageCode(It.IsAny<string>())).Returns(foundCv);
 
-            var result = _controller.CvPdf("test") as ViewResult;
+            var result = _controller.CvPrint("test") as ViewResult;
 
-            Assert.IsNotNull(result);
-            Assert.IsNotNull(result.ViewData.Model);
-            Assert.IsInstanceOfType(result.ViewData.Model, typeof(Cv));
+            result.ShouldNotBeNull();
+            result.ViewData.Model.ShouldNotBeNull();
+            result.ViewData.Model.ShouldBeOfType<Cv>();
 
             var cvResult = result.ViewData.Model as Cv;
 
-            Assert.AreEqual(foundCv, cvResult);
+            foundCv.ShouldBe(cvResult);
+
         }
 
         [TestMethod]
         public void CvPdf404()
         {
             _cvRepo.Setup(r => r.GetResumeFromLanguageCode(It.IsAny<string>())).Returns((Cv)null);
-            var result = _controller.CvPdf("test");
-            Assert.IsInstanceOfType(result, typeof(HttpNotFoundResult));
+            var result = _controller.CvPrint("test");
+
+            result.ShouldBeOfType<HttpNotFoundResult>();
+
         }
 
 
@@ -121,13 +161,26 @@ namespace Mazzimo.Tests
             var foundPost = new Post();
             _postRepo.Setup(r => r.GetById(It.IsAny<string>())).Returns(foundPost);
 
+            _postContentResolver.Setup(r => r.ExtractContent(It.IsAny<Post>()))
+                                .Returns(TEST_RENDERED_CONTENT);
+
+            _ctxFactory.Setup(f => f.GetCurrentRequestUri())
+                       .Returns(TEST_URI);
+
             var result = _controller.Post("test") as ViewResult;
-            Assert.IsNotNull(result.ViewData.Model);
-            Assert.IsInstanceOfType(result.ViewData.Model, typeof(Post));
 
-            var postResult = result.ViewData.Model as Post;
+            result.ViewData.Model.ShouldNotBeNull();
+            result.ViewData.Model.ShouldBeOfType<RenderedPostViewModel>();
 
-            Assert.AreEqual(foundPost, postResult); 
+            var postResult = result.ViewData.Model as RenderedPostViewModel;
+
+            var expectedTotalUrl = String.Format("{0}{1}{2}{3}", TEST_URI.Scheme, Uri.SchemeDelimiter, TEST_URI.Authority, TEST_URI.AbsolutePath);
+
+            postResult.Post.ShouldBe(foundPost);
+            postResult.RenderedContent.ShouldBe(TEST_RENDERED_CONTENT);
+            postResult.TotalUrl.ShouldBe(expectedTotalUrl); 
+
+
         }
 
         [TestMethod]
@@ -135,7 +188,8 @@ namespace Mazzimo.Tests
         {
             _postRepo.Setup(r => r.GetById(It.IsAny<string>())).Returns((Post)null);
             var result = _controller.Post("test");
-            Assert.IsInstanceOfType(result, typeof(HttpNotFoundResult));
+
+            result.ShouldBeOfType<HttpNotFoundResult>();
         }
 
     }

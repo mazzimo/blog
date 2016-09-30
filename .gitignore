@@ -4,3 +4,4 @@ Mazzimo/obj/*
 Mazzimo.Tests/obj/*
 Mazzimo/Properties/PublishProfiles/*
 .vs/*
+Mazzimo/node_modules/

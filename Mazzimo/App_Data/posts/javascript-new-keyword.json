@@ -1,7 +1,7 @@
 ﻿{
     Code: "javascript-new-keyword",
     PostDate: "2016-04-21T00:00Z",
-    ContentFile:  "/App_Data/posts/markdowns/javascript-new-keywords.md",
+    ContentFile:  "/App_Data/posts/markdowns/javascript-new-keyword.md",
 	Title : "Journey of a c# developer into Javascript part 3 - the \"new\" operator",
 	Teaser : "Using the *new* keyword in Javascript is really confusing at first sight: after all Javascript doesn't have a concept of classes, so why having a new keyword?",
     Tags: [ "Javascript", "new" ],

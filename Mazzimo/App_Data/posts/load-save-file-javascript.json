@@ -1,0 +1,20 @@
+﻿{
+  "Code": "load-save-file-javascript",
+  "Title": "Load and Save a JSON file in Javascript",
+  "PostDate": "2017-03-12T00:00Z",
+  "Teaser": "It might happen during the development of your web application to have the need to load and save a file using only client side code",
+  "Tags": [ "Javascript", "JSON" ],
+  "ContentFile": "/App_Data/posts/markdowns/load-save-file-javascript.md",
+  "NextPosts": [
+    {
+      "Code": "javascript-prototype",
+      "Title": "Journey of a c# developer into Javascript part 4 - inheritance"
+    },
+    {
+      "Code": "javascript-new-keyword",
+      "Title": "Journey of a c# developer into Javascript part 3 - the \"new\" operator"
+    }
+  ]
+}
+
+

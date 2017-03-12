@@ -296,6 +296,8 @@
     <Content Include="App_Data\posts\markdowns\javascript-prototype.md" />
     <Content Include="App_Data\posts\markdowns\javascript-what-is-this.md" />
     <Content Include="App_Data\posts\markdowns\multiple-file-upload-aspnet-mvc-angular.md" />
+    <Content Include="App_Data\posts\markdowns\load-save-file-javascript.md" />
+    <Content Include="App_Data\posts\load-save-file-javascript.json" />
     <Content Include="App_Data\posts\markdowns\vanity-url-su-aspnet-mvc.md" />
     <None Include="Properties\PublishProfiles\mazzimo - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\mazzimo - Web Deploy.pubxml" />

@@ -6,16 +6,83 @@
 	EducationDesc : 'Education',
 	SkillsDesc : 'Skills',
 	SideProjectsDesc : 'Side Projects',
-	WorkingExperience: [
-		{
-			CompanyName : 'Reading Room',
-			CompanyLogo : '../Images/Companies/rroom.png',
-			CompanyWebsite : 'http://www.readingroom.com/',
-			RoleName : 'Web Developer/Software Engineer',
-			DateStart : "2014-09-01T00:00:00.000Z",
-			DateEnd : null,
-			Description : 'Reading Room is a digital agency based in UK recently acquired by Idox Group. My main task consist in following the development lifecycle of some of the .Net projects (mainly Sitecore and Kentico), from analysis to maintenance.',
-      Skills: [
+  WorkingExperience: [
+    {
+      "CompanyName": "easyJet",
+      "CompanyLogo": "../Images/Companies/ejlogo.jpg",
+      "CompanyWebsite": "http://www.easyjet.co.uk/",
+      "RoleName": "Web Developer",
+      "DateStart": "2016-12-01T00:00:00.000Z",
+      "DateEnd": null,
+      "Description": "easyJet is one of the most important low-cost airline companies in europe. I'm part of the team that is working on the seating platform.",
+      "Skills": [
+        {
+          "Id": "csharp",
+          "Desc": "c#"
+        },
+        {
+          "Id": "javascript",
+          "Desc": "JavaScript"
+        },
+        {
+          "Id": "dotnet",
+          "Desc": ".Net"
+        },
+        {
+          "Id": "aspnetmvc",
+          "Desc": "ASP.NET MVC"
+        },
+        {
+          "Id": "aspnetwebapi",
+          "Desc": "ASP.NET Web API"
+        },
+        {
+          "Id": "swagger",
+          "Desc": "Swagger"
+        },
+        {
+          "Id": "sqlserver",
+          "Desc": "SQL Server"
+        },
+        {
+          "Id": "git",
+          "Desc": "Git"
+        },
+        {
+          "Id": "ci",
+          "Desc": "Continuos Integration"
+        },
+        {
+          "Id": "teamcity",
+          "Desc": "Team City"
+        },
+        {
+          "Id": "tdd",
+          "Desc": "TDD"
+        },
+        {
+          "Id": "bdd",
+          "Desc": "BDD"
+        },
+        {
+          "Id": "unittesting",
+          "Desc": "Unit Testing"
+        },
+        {
+          "Id": "ioc",
+          "Desc": "IoC"
+        }
+      ]
+    },
+    {
+      "CompanyName": "Reading Room",
+      "CompanyLogo": "../Images/Companies/rroom.png",
+      "CompanyWebsite": "http://www.readingroom.com/",
+      "RoleName": "Web Developer/Software Engineer",
+      "DateStart": "2014-09-01T00:00:00.000Z",
+      "DateEnd": "2016-12-01T00:00:00.000Z",
+      "Description": "Reading Room is a digital agency based in UK recently acquired by Idox Group. My main task consist in following the development lifecycle of some of the .Net projects (mainly Sitecore and Kentico), from analysis to maintenance.",
+      "Skills": [
         {
           "Id": "csharp",
           "Desc": "c#"
@@ -74,224 +141,224 @@
         }
       ]
 
-		},
-		{
-			CompanyName : 'Sporting Index',
-			CompanyLogo : '../Images/Companies/spindex.png',
-			CompanyWebsite : 'http://www.sportingindex.com/',
-			RoleName : 'Integration Software Engineer',
-			DateStart : "2013-06-01T00:00:00.000Z",
-			DateEnd : "2014-07-01T00:00:00.000Z",
-			Description : 'Sporting Index is award winning company specialized in spread betting. I was part of the integration team. Main responsibilities include: Design and build new API\'s and working with customers helping them integrate the platform into their systems.',
-			Skills : [
-				{ 
-					Id:'csharp',
-					Desc : 'c#'
-				},
-				{ 
-					Id:'dotnet',
-					Desc : '.Net'
-				},
-				{ 
-					Id:'mongodb',
-					Desc : 'Mongo DB'
-				},
-				{ 
-					Id:'rest',
-					Desc : 'REST'
-				},
-				{ 
-					Id:'hateos',
-					Desc : 'HATEOS'
-				},
-				{ 
-					Id:'tdd',
-					Desc : 'TDD'
-				},
-				{ 
-					Id:'unittesting',
-					Desc : 'Unit Testing'
-				},
-				{ 
-					Id:'rabbitmq',
-					Desc : 'RabbitMQ'
-				},
-				{ 
-					Id:'git',
-					Desc : 'Git'
-				},
-				{ 
-					Id:'ci',
-					Desc : 'Continuos Integration'
-				},
-				{ 
-					Id:'ioc',
-					Desc : 'IoC'
-				}
-			]
-		},
-		{
-			CompanyName : 'Prama',
-			CompanyLogo : '../Images/Companies/prama.png',
-			CompanyWebsite : 'http://www.prama.co.uk/',
-			RoleName : 'Software Engineer',
-			DateStart : "2012-08-01T00:00:00.000Z",
-			DateEnd : "2013-05-01T00:00:00.000Z",
-			Description : 'Prama is a brand that includes products such as www.asiand8.com, www.chillitickets.com, the AsianWoman and AsianBride magazines. As part of the IT crew I took care of maintenance and improvement of the current applications as well as building new products for the company.',
-			Skills : [
-				{ 
-					Id:'csharp',
-					Desc : 'c#'
-				},
-				{ 
-					Id:'vbnet',
-					Desc : 'VB.NET'
-				},
-				{ 
-					Id:'dotnet',
-					Desc : '.Net'
-				},
-				{ 
-					Id:'aspnetwebforms',
-					Desc : 'ASP.NET WebForms'
-				},
-				{ 
-					Id:'aspnetmvc',
-					Desc : 'ASP.NET MVC'
-				},
-				{ 
-					Id:'javascript',
-					Desc : 'JavaScript'
-				},
-				{ 
-					Id:'jquery',
-					Desc : 'jQuery'
-				},
-				{ 
-					Id:'css',
-					Desc : 'CSS'
-				},
-				{ 
-					Id:'bootstrap',
-					Desc : 'Bootstrap'
-				},
-				{ 
-					Id:'rest',
-					Desc : 'REST'
-				},
-				{ 
-					Id:'unittesting',
-					Desc : 'Unit Testing'
-				},
-				{ 
-					Id:'sqlserver',
-					Desc : 'SQLServer'
-				},
-				{ 
-					Id:'svn',
-					Desc : 'SVN'
-				},
-				{ 
-					Id:'ioc',
-					Desc : 'IoC'
-				}
-			]
-		},
-		{
-			CompanyName : 'WeBuild',
-			CompanyLogo : '../Images/Companies/webuild.jpg',
-			CompanyWebsite : 'http://www.webuild.co.uk/',
-			RoleName : 'Web Developer/Software Engineer',
-			DateStart : "2011-06-01T00:00:00.000Z",
-			DateEnd : "2012-08-01T00:00:00.000Z",
-			Description : 'In WeBuild I took care of all the new projects which the company is involved, in all the software development life-cycle, from analysis to delivery.',
-			Skills : [
-				{ 
-					Id:'csharp',
-					Desc : 'c#'
-				},
-				{ 
-					Id:'vbnet',
-					Desc : 'VB.NET'
-				},
-				{ 
-					Id:'dotnet',
-					Desc : '.Net'
-				},
-				{ 
-					Id:'aspnetwebforms',
-					Desc : 'ASP.NET WebForms'
-				},
-				{ 
-					Id:'javascript',
-					Desc : 'JavaScript'
-				},
-				{ 
-					Id:'jquery',
-					Desc : 'jQuery'
-				},
-				{ 
-					Id:'css',
-					Desc : 'CSS'
-				},
-				{ 
-					Id:'rest',
-					Desc : 'REST'
-				},
-				{ 
-					Id:'sqlserver',
-					Desc : 'SQLServer'
-				},
-				{ 
-					Id:'svn',
-					Desc : 'SVN'
-				}
-			]
-		},
-		{
-			CompanyName : 'Optima Italia',
-			CompanyLogo : '../Images/Companies/optima.png',
-			CompanyWebsite : 'http://www.optimaitalia.com/',
-			RoleName : '.NET/ SQL Server software developer',
-			DateStart : "2008-10-01T00:00:00.000Z",
-			DateEnd : "2011-05-01T00:00:00.000Z",
-			Description : 'Optima Italia is an italian nation-wide multiutility. My role there was to build and maintain the billing and the provisioning systems of the company, mainly built in .Net and SQL server.',
-			Skills : [
-				{ 
-					Id:'csharp',
-					Desc : 'c#'
-				},
-				{ 
-					Id:'vbnet',
-					Desc : 'VB.NET'
-				},
-				{ 
-					Id:'dotnet',
-					Desc : '.Net'
-				},
-				{ 
-					Id:'sqlserver',
-					Desc : 'SQLServer'
-				},
-				{ 
-					Id:'aspnetwebforms',
-					Desc : 'ASP.NET WebForms'
-				},
-				{ 
-					Id:'winforms',
-					Desc : 'Windows Forms'
-				},
-				{ 
-					Id:'svn',
-					Desc : 'SVN'
-				},
-				{ 
-					Id:'soap',
-					Desc : 'SOAP'
-				}
-			]
-		}
-	],
+    },
+    {
+      "CompanyName": "Sporting Index",
+      "CompanyLogo": "../Images/Companies/spindex.png",
+      "CompanyWebsite": "http://www.sportingindex.com/",
+      "RoleName": "Integration Software Engineer",
+      "DateStart": "2013-06-01T00:00:00.000Z",
+      "DateEnd": "2014-07-01T00:00:00.000Z",
+      "Description": "Sporting Index is award winning company specialized in spread betting. I was part of the integration team. Main responsibilities include: Design and build new API's and working with customers helping them integrate the platform into their systems.",
+      "Skills": [
+        {
+          "Id": "csharp",
+          "Desc": "c#"
+        },
+        {
+          "Id": "dotnet",
+          "Desc": ".Net"
+        },
+        {
+          "Id": "mongodb",
+          "Desc": "Mongo DB"
+        },
+        {
+          "Id": "rest",
+          "Desc": "REST"
+        },
+        {
+          "Id": "hateos",
+          "Desc": "HATEOS"
+        },
+        {
+          "Id": "tdd",
+          "Desc": "TDD"
+        },
+        {
+          "Id": "unittesting",
+          "Desc": "Unit Testing"
+        },
+        {
+          "Id": "rabbitmq",
+          "Desc": "RabbitMQ"
+        },
+        {
+          "Id": "git",
+          "Desc": "Git"
+        },
+        {
+          "Id": "ci",
+          "Desc": "Continuos Integration"
+        },
+        {
+          "Id": "ioc",
+          "Desc": "IoC"
+        }
+      ]
+    },
+    {
+      "CompanyName": "Prama",
+      "CompanyLogo": "../Images/Companies/prama.png",
+      "CompanyWebsite": "http://www.prama.co.uk/",
+      "RoleName": "Software Engineer",
+      "DateStart": "2012-08-01T00:00:00.000Z",
+      "DateEnd": "2013-05-01T00:00:00.000Z",
+      "Description": "Prama is a brand that includes products such as www.asiand8.com, www.chillitickets.com, the AsianWoman and AsianBride magazines. As part of the IT crew I took care of maintenance and improvement of the current applications as well as building new products for the company.",
+      "Skills": [
+        {
+          "Id": "csharp",
+          "Desc": "c#"
+        },
+        {
+          "Id": "vbnet",
+          "Desc": "VB.NET"
+        },
+        {
+          "Id": "dotnet",
+          "Desc": ".Net"
+        },
+        {
+          "Id": "aspnetwebforms",
+          "Desc": "ASP.NET WebForms"
+        },
+        {
+          "Id": "aspnetmvc",
+          "Desc": "ASP.NET MVC"
+        },
+        {
+          "Id": "javascript",
+          "Desc": "JavaScript"
+        },
+        {
+          "Id": "jquery",
+          "Desc": "jQuery"
+        },
+        {
+          "Id": "css",
+          "Desc": "CSS"
+        },
+        {
+          "Id": "bootstrap",
+          "Desc": "Bootstrap"
+        },
+        {
+          "Id": "rest",
+          "Desc": "REST"
+        },
+        {
+          "Id": "unittesting",
+          "Desc": "Unit Testing"
+        },
+        {
+          "Id": "sqlserver",
+          "Desc": "SQLServer"
+        },
+        {
+          "Id": "svn",
+          "Desc": "SVN"
+        },
+        {
+          "Id": "ioc",
+          "Desc": "IoC"
+        }
+      ]
+    },
+    {
+      "CompanyName": "WeBuild",
+      "CompanyLogo": "../Images/Companies/webuild.jpg",
+      "CompanyWebsite": "http://www.webuild.co.uk/",
+      "RoleName": "Web Developer/Software Engineer",
+      "DateStart": "2011-06-01T00:00:00.000Z",
+      "DateEnd": "2012-08-01T00:00:00.000Z",
+      "Description": "In WeBuild I took care of all the new projects which the company is involved, in all the software development life-cycle, from analysis to delivery.",
+      "Skills": [
+        {
+          "Id": "csharp",
+          "Desc": "c#"
+        },
+        {
+          "Id": "vbnet",
+          "Desc": "VB.NET"
+        },
+        {
+          "Id": "dotnet",
+          "Desc": ".Net"
+        },
+        {
+          "Id": "aspnetwebforms",
+          "Desc": "ASP.NET WebForms"
+        },
+        {
+          "Id": "javascript",
+          "Desc": "JavaScript"
+        },
+        {
+          "Id": "jquery",
+          "Desc": "jQuery"
+        },
+        {
+          "Id": "css",
+          "Desc": "CSS"
+        },
+        {
+          "Id": "rest",
+          "Desc": "REST"
+        },
+        {
+          "Id": "sqlserver",
+          "Desc": "SQLServer"
+        },
+        {
+          "Id": "svn",
+          "Desc": "SVN"
+        }
+      ]
+    },
+    {
+      "CompanyName": "Optima Italia",
+      "CompanyLogo": "../Images/Companies/optima.png",
+      "CompanyWebsite": "http://www.optimaitalia.com/",
+      "RoleName": ".NET/ SQL Server software developer",
+      "DateStart": "2008-10-01T00:00:00.000Z",
+      "DateEnd": "2011-05-01T00:00:00.000Z",
+      "Description": "Optima Italia is an italian nation-wide multiutility. My role there was to build and maintain the billing and the provisioning systems of the company, mainly built in .Net and SQL server.",
+      "Skills": [
+        {
+          "Id": "csharp",
+          "Desc": "c#"
+        },
+        {
+          "Id": "vbnet",
+          "Desc": "VB.NET"
+        },
+        {
+          "Id": "dotnet",
+          "Desc": ".Net"
+        },
+        {
+          "Id": "sqlserver",
+          "Desc": "SQLServer"
+        },
+        {
+          "Id": "aspnetwebforms",
+          "Desc": "ASP.NET WebForms"
+        },
+        {
+          "Id": "winforms",
+          "Desc": "Windows Forms"
+        },
+        {
+          "Id": "svn",
+          "Desc": "SVN"
+        },
+        {
+          "Id": "soap",
+          "Desc": "SOAP"
+        }
+      ]
+    }
+  ],
 	SideProjects : [
 		{
 			Name : 'In Giro Con Fluppa',

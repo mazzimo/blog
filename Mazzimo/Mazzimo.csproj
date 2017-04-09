@@ -213,6 +213,7 @@
     <Content Include="Favicons\mstile-70x70.png" />
     <Content Include="Font\socicon-webfont.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Images\Companies\eJlogo.jpg" />
     <Content Include="Images\Companies\fluppa.jpg" />
     <Content Include="Images\Companies\fpreader.png" />
     <Content Include="Images\Companies\logofb.png" />
@@ -285,8 +286,6 @@
     <Content Include="App_Data\posts\javascript-what-is-this.json" />
     <Content Include="App_Data\posts\javascript-hoisting-and-undefined.json" />
     <Content Include="App_Data\posts\multiple-file-upload-aspnet-mvc-angular.json" />
-    <Content Include="Content\PdfResumes\cv-en.pdf" />
-    <Content Include="Content\PdfResumes\cv-it.pdf" />
     <Content Include="App_Data\posts\javascript-new-keyword.json" />
     <Content Include="App_Data\posts\javascript-prototype.json" />
     <Content Include="package.json" />
@@ -299,6 +298,8 @@
     <Content Include="App_Data\posts\markdowns\load-save-file-javascript.md" />
     <Content Include="App_Data\posts\load-save-file-javascript.json" />
     <Content Include="App_Data\posts\markdowns\vanity-url-su-aspnet-mvc.md" />
+    <Content Include="Content\PdfResumes\cv-en.pdf" />
+    <Content Include="Content\PdfResumes\cv-it.pdf" />
     <None Include="Properties\PublishProfiles\mazzimo - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\mazzimo - Web Deploy.pubxml" />
     <Content Include="Views\Home\Post.cshtml" />

@@ -56,7 +56,7 @@ each function has a specific member called *prototype*. the value of the prototy
     //aaaaaaa does not exists in anyone of the chained __proto__ members. returns undefined
     one.aaaaaaa;
 
-a main difference is that **superclasses are immutable on classical inheritance, but variable on prototypical inheritance**. nothing stops us to replace the prototype of a function with another one. in this case, only the new instances of the object will have the new methods and members. old ones will continue to have the older subclasses.
+a main difference is that **superclasses are immutable on classical inheritance, but variable on prototypal inheritance**. nothing stops us to replace the prototype of a function with another one. in this case, only the new instances of the object will have the new methods and members. old ones will continue to have the older subclasses.
 
     function SuperClassOne() {
         this.numb = 3;
